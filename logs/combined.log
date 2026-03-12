@@ -1,0 +1,2805 @@
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:38:40'
+}
+{
+  message: 'Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:38:40'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:38:58'
+}
+{
+  message: 'Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:38:58'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:38:59'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:29'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:29'
+}
+{
+  message: 'Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:29'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:57'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:59'
+}
+{
+  message: 'Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:39:59'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  level: 'error',
+  message: 'Failed to connect to Redis: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.',
+  stack: 'MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.\n' +
+    '    at Socket.<anonymous> (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n' +
+    '    at Object.onceWrapper (node:events:633:26)\n' +
+    '    at Socket.emit (node:events:518:28)\n' +
+    '    at TCP.<anonymous> (node:net:351:12)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:17'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:19'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:19'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:19'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:19'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:20'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:20'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:20'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:20'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:21'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:21'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:22'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:22'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:22'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:22'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:23'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:23'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:24'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:24'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:25'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:25'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:26'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:26'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:27'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:27'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:28'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:28'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:29'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:29'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:30'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:30'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:31'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:31'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:32'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:32'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:33'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:33'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:35'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:35'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:36'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:36'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:38'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:38'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:48'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  service: 'careernav-api',
+  level: 'error',
+  message: 'Failed to connect to Redis: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.',
+  stack: 'MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.\n' +
+    '    at Socket.<anonymous> (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n' +
+    '    at Object.onceWrapper (node:events:633:26)\n' +
+    '    at Socket.emit (node:events:518:28)\n' +
+    '    at TCP.<anonymous> (node:net:351:12)',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:49'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:50'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:50'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:50'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:50'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:51'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:51'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:51'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:51'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:52'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:52'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:52'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:52'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:53'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:53'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:54'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:54'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:54'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:54'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:55'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:55'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:56'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:56'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:57'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:57'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:58'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:58'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:40:59'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:40:59'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:00'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:00'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:01'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:01'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:02'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:02'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:04'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:04'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:05'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:05'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:06'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:06'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:08'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:08'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:09'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:09'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  level: 'error',
+  message: 'Failed to connect to Redis: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.',
+  stack: 'MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.\n' +
+    '    at Socket.<anonymous> (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n' +
+    '    at Object.onceWrapper (node:events:633:26)\n' +
+    '    at Socket.emit (node:events:518:28)\n' +
+    '    at TCP.<anonymous> (node:net:351:12)',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:14'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:15'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:16'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:17'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:17'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:18'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:18'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:18'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:19'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:19'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:20'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:20'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:20'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:20'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:21'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:21'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:22'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:22'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:23'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:23'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:24'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:24'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:25'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:25'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:26'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:26'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:27'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:27'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:28'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:28'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:32'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:32'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:32'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:32'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:32'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  service: 'careernav-api',
+  level: 'error',
+  message: 'Failed to connect to Redis: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.',
+  stack: 'MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.\n' +
+    '    at Socket.<anonymous> (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n' +
+    '    at Object.onceWrapper (node:events:633:26)\n' +
+    '    at Socket.emit (node:events:518:28)\n' +
+    '    at TCP.<anonymous> (node:net:351:12)',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:33'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:34'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:35'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:35'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:35'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:35'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:36'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:36'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:36'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:36'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:37'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:37'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:38'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:38'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:39'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:39'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:39'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:39'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:40'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:40'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:41'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:41'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:42'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:42'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:43'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:43'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:44'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:44'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:45'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:45'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:47'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:47'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:48'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:48'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:49'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:49'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:50'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:50'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:52'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:52'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:53'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:53'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:55'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:55'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:56'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:56'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:58'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:58'
+}
+{
+  service: 'careernav-api',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Redis connection error:',
+  stack: 'AggregateError [ECONNREFUSED]: \n' +
+    '    at internalConnectMultiple (node:net:1139:18)\n' +
+    '    at afterConnectMultiple (node:net:1714:7)',
+  timestamp: '2026-01-23 16:41:59'
+}
+{
+  message: 'Redis connection closed',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:41:59'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:42:07'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:42:07'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:42:07'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:42:07'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:42:09'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:42:52',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:42:52',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/health',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:43:18',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:43:18',
+  level: 'error'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:02'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:02'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:02'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:02'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:08'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:08'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:08'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:08'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:09'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/health',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:45:18',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:45:19',
+  level: 'error'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:37'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:37'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:37'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:37'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:45:38'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:46:54'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:46:54'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:46:54'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:46:54'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:46:55'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/health',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:46:58',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:46:58',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:47:01',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:47:02',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:47:04',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-01-23 16:47:05',
+  level: 'error'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:47:13'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:47:13'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:47:13'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-23 16:47:13'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 09:59:28'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 09:59:36'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 09:59:36'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 09:59:36'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 09:59:36'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-01-30 10:00:32'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:02:51'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:02:52'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:02:52'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:02:52'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:02:52'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:04:27'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:04:29'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:04:30'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:04:30'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:04:30'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:19'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:21'
+}
+{
+  service: 'careernav-api',
+  level: 'error',
+  message: 'Failed to start server: logger.ingo is not a function',
+  stack: 'TypeError: logger.ingo is not a function\n' +
+    '    at Server.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/server.js:55:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  timestamp: '2026-02-26 04:05:21'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:31'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:33'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-02-26 04:05:34'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:34'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:34'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-02-26 04:05:34'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:02'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:05'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:05'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-01 14:31:07'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:07'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:07'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:31:07'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 14:33:18'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:19'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:21'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:22'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-01 15:00:23'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:23'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:23'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-01 15:00:23'
+}
