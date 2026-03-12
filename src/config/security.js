@@ -42,7 +42,7 @@ export const strictLimiter = rateLimit({
 });
 
 // Security middleware configuration
-export const configureSecurityMiddleware = (app) => {
+export const configureSecurityMiddleware = (app, options = {}) => {
   // Helmet for security headers
   app.use(helmet({
     contentSecurityPolicy: {
@@ -62,10 +62,15 @@ export const configureSecurityMiddleware = (app) => {
   }));
 
   // CORS configuration
+  const envOrigins = (process.env.CORS_ORIGIN || "")
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+
   app.use(cors({
     origin: function (origin, callback) {
       const allowedOrigins = [
-        process.env.CORS_ORIGIN,
+        ...envOrigins,
         'http://localhost:3000',
         'http://localhost:3001',
         'https://your-frontend-domain.com'
@@ -93,8 +98,10 @@ export const configureSecurityMiddleware = (app) => {
 );
 
   // XSS protection
-//   app.use(xss());
+  app.use(xss());
 
   // General rate limiting
-  app.use(generalLimiter);
+  if (options.applyGeneralLimiter !== false) {
+    app.use(generalLimiter);
+  }
 };

@@ -10,6 +10,8 @@ import { emailVerificationTemplate } from "../templates/email.js";
 import { sendEmail } from "../config/mail.config.js";
 import { securityLogger, auditLogger } from "../middleware/requestLogger.js";
 import logger from "../config/logger.js";
+import { Usage } from "../models/monetization/Usage.model.js";
+import { initializeUserUsage } from "./usage.service.js";
 import { configDotenv } from "dotenv";
 configDotenv({path: '../.env'});
 
@@ -36,6 +38,9 @@ export const registerService = async (name, email, password, req) => {
     email: email.toLowerCase().trim(),
     passwordHash: hashedPassword
   });
+
+  // Initialize default usage/billing plan for the user
+  await initializeUserUsage(user._id);
 
   const { otp, token } = await OtpToken.createOtp(user._id, "email_verification");
 
@@ -89,6 +94,7 @@ export const registerService = async (name, email, password, req) => {
   } catch (emailError) {
     // If email fails, delete the user to maintain consistency
     await User.findByIdAndDelete(user._id);
+    await Usage.findOneAndDelete({ userId: user._id });
     logger.error('Failed to send verification email, user deleted', { email, error: emailError.message });
     throw new AppError("Registration failed. Please try again.", 500);
   }

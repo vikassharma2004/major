@@ -1,0 +1,847 @@
+{
+  "info": {
+    "name": "CareerNav API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "CareerNav backend API collection (includes new billing, AI, purchases, profiles)."
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "apiVersion",
+      "value": "/api/v1"
+    }
+  ],
+  "item": [
+    {
+      "name": "Core",
+      "item": [
+        {
+          "name": "Health",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/health", "host": ["{{baseUrl}}"], "path": ["health"] }
+          }
+        },
+        {
+          "name": "Root",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/", "host": ["{{baseUrl}}"], "path": [""] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"Password@123\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/register", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "register"] }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"jane@example.com\",\n  \"password\": \"Password@123\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/login", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/logout", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "logout"] }
+          }
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/refresh", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "refresh"] }
+          }
+        },
+        {
+          "name": "2FA Generate",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/2fa/generate", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "2fa", "generate"] }
+          }
+        },
+        {
+          "name": "2FA Verify",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"token\": \"123456\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/2fa/verify", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "2fa", "verify"] }
+          }
+        },
+        {
+          "name": "2FA Login",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"userId\": \"<userId>\",\n  \"token\": \"123456\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/login/2fa", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "login", "2fa"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Get Me",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me"] }
+          }
+        },
+        {
+          "name": "Update Me",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Jane Updated\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me"] }
+          }
+        },
+        {
+          "name": "Change Password",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"currentPassword\": \"Password@123\",\n  \"newPassword\": \"Password@456\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/password", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "password"] }
+          }
+        },
+        {
+          "name": "Disable 2FA",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/2fa", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "2fa"] }
+          }
+        },
+        {
+          "name": "Update Account",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"active\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/account", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "account"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Roadmaps",
+      "item": [
+        {
+          "name": "Get My Roadmaps",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "me"] }
+          }
+        },
+        {
+          "name": "List Published Roadmaps",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap"] }
+          }
+        },
+        {
+          "name": "Get Roadmap",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+          }
+        },
+        {
+          "name": "Create Roadmap",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Frontend Roadmap\",\n  \"level\": \"beginner\",\n  \"domain\": \"frontend\",\n  \"description\": \"Learn frontend step by step\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap"] }
+          }
+        },
+        {
+          "name": "Update Roadmap",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"description\": \"Updated description\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+          }
+        },
+        {
+          "name": "Publish Roadmap",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id/publish", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id", "publish"] }
+          }
+        },
+        {
+          "name": "Delete Roadmap",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "item": [
+        {
+          "name": "List Modules",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:roadmapId/modules", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":roadmapId", "modules"] }
+          }
+        },
+        {
+          "name": "Create Module",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"HTML Basics\",\n  \"order\": 1\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:roadmapId/modules", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":roadmapId", "modules"] }
+          }
+        },
+        {
+          "name": "Update Module",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Module\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/modules/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "modules", ":id"] }
+          }
+        },
+        {
+          "name": "Delete Module",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/modules/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "modules", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "List Tasks",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/:moduleId/tasks", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", ":moduleId", "tasks"] }
+          }
+        },
+        {
+          "name": "Create Task",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Build a page\",\n  \"order\": 1\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/:moduleId/tasks", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", ":moduleId", "tasks"] }
+          }
+        },
+        {
+          "name": "Update Task",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Task\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/tasks/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", "tasks", ":id"] }
+          }
+        },
+        {
+          "name": "Delete Task",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/tasks/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", "tasks", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "item": [
+        {
+          "name": "List Resources",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/:taskId/resources", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", ":taskId", "resources"] }
+          }
+        },
+        {
+          "name": "Create Resource",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"HTML Guide\",\n  \"url\": \"https://developer.mozilla.org/\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/:taskId/resources", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", ":taskId", "resources"] }
+          }
+        },
+        {
+          "name": "Update Resource",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Resource\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/resources/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", "resources", ":id"] }
+          }
+        },
+        {
+          "name": "Delete Resource",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/resources/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", "resources", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "List Projects",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/projects", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "projects"] }
+          }
+        },
+        {
+          "name": "Create Project",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Portfolio Site\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/projects", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "projects"] }
+          }
+        },
+        {
+          "name": "Update Project",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Project\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/projects/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", "projects", ":id"] }
+          }
+        },
+        {
+          "name": "Delete Project",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/projects/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", "projects", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Enrollment",
+      "item": [
+        {
+          "name": "Enroll Roadmap",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/enroll", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "enroll"] }
+          }
+        },
+        {
+          "name": "Get My Enrollments",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/me/enrollments", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "me", "enrollments"] }
+          }
+        },
+        {
+          "name": "Unenroll Roadmap",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/enroll", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "enroll"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Communities",
+      "item": [
+        {
+          "name": "Get My Communities",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", "me"] }
+          }
+        },
+        {
+          "name": "Get Community",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId"] }
+          }
+        },
+        {
+          "name": "Leave Community",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/leave", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "leave"] }
+          }
+        },
+        {
+          "name": "Mute Community",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/mute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "mute"] }
+          }
+        },
+        {
+          "name": "Unmute Community",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/unmute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "unmute"] }
+          }
+        },
+        {
+          "name": "Get Community Members",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members"] }
+          }
+        },
+        {
+          "name": "Remove Community Member",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId"] }
+          }
+        },
+        {
+          "name": "Mute Member",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId/mute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId", "mute"] }
+          }
+        },
+        {
+          "name": "Unmute Member",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId/unmute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId", "unmute"] }
+          }
+        },
+        {
+          "name": "Get Messages",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages"] }
+          }
+        },
+        {
+          "name": "Send Message",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Hello community!\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages"] }
+          }
+        },
+        {
+          "name": "Update Message",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Updated message\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId"] }
+          }
+        },
+        {
+          "name": "Delete Message",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId"] }
+          }
+        },
+        {
+          "name": "Pin Message",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/pin", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "pin"] }
+          }
+        },
+        {
+          "name": "Unpin Message",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/unpin", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "unpin"] }
+          }
+        },
+        {
+          "name": "React Message",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"reaction\": \"+1\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/reactions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "reactions"] }
+          }
+        },
+        {
+          "name": "Remove Reaction",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/reactions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "reactions"] }
+          }
+        },
+        {
+          "name": "Mark Read",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/read", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "read"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "List Notifications",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications"] }
+          }
+        },
+        {
+          "name": "Create Notification",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Reminder\",\n  \"message\": \"Complete your task\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications"] }
+          }
+        },
+        {
+          "name": "Mark All Read",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/read-all", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", "read-all"] }
+          }
+        },
+        {
+          "name": "Mark Read",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/:id/read", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", ":id", "read"] }
+          }
+        },
+        {
+          "name": "Delete Notification",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Submissions",
+      "item": [
+        {
+          "name": "Create Project Submission",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"projectId\": \"<projectId>\",\n  \"submissionUrl\": \"https://github.com/user/repo\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions"] }
+          }
+        },
+        {
+          "name": "Get My Project Submissions",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions", "me"] }
+          }
+        },
+        {
+          "name": "Review Project Submission",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"feedback\": \"Great work!\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions", ":id", "review"] }
+          }
+        },
+        {
+          "name": "Create Task Submission",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"taskId\": \"<taskId>\",\n  \"submissionText\": \"My solution\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions"] }
+          }
+        },
+        {
+          "name": "Get My Task Submissions",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions", "me"] }
+          }
+        },
+        {
+          "name": "Review Task Submission",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"feedback\": \"Good\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions", ":id", "review"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Progress",
+      "item": [
+        {
+          "name": "Start Progress",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"moduleId\": \"<moduleId>\",\n  \"taskId\": \"<taskId>\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/start", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "start"] }
+          }
+        },
+        {
+          "name": "Complete Progress",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"moduleId\": \"<moduleId>\",\n  \"taskId\": \"<taskId>\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/complete", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "complete"] }
+          }
+        },
+        {
+          "name": "Roadmap Progress",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/roadmaps/:roadmapId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "roadmaps", ":roadmapId"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Purchases",
+      "item": [
+        {
+          "name": "Create Roadmap Purchase",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/roadmaps/:roadmapId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", "roadmaps", ":roadmapId"] }
+          }
+        },
+        {
+          "name": "List My Purchases",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", "me"] }
+          }
+        },
+        {
+          "name": "Get Purchase",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", ":id"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Profiles",
+      "item": [
+        {
+          "name": "Get My Role Profile",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles", "me"] }
+          }
+        },
+        {
+          "name": "List Role Profiles (Admin)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles"] }
+          }
+        },
+        {
+          "name": "Upsert Role Profile (Admin)",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"userId\": \"<userId>\",\n  \"permissions\": [\"roadmap:write\"]\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles"] }
+          }
+        },
+        {
+          "name": "Get My Mentor Profile",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", "me"] }
+          }
+        },
+        {
+          "name": "Update My Mentor Profile",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"expertise\": [\"frontend\"],\n  \"experienceYears\": 4,\n  \"bio\": \"Frontend mentor\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", "me"] }
+          }
+        },
+        {
+          "name": "Verify Mentor (Admin)",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"isVerified\": true\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/:userId/verify", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", ":userId", "verify"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "item": [
+        {
+          "name": "Create Conversation",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"taskId\": \"<taskId>\",\n  \"purpose\": \"guidance\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations"] }
+          }
+        },
+        {
+          "name": "List Conversations",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations"] }
+          }
+        },
+        {
+          "name": "Get Conversation",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id"] }
+          }
+        },
+        {
+          "name": "Send Message",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Can you help me with this task?\",\n  \"generate\": true\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id", "messages"] }
+          }
+        },
+        {
+          "name": "Close Conversation",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id/close", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id", "close"] }
+          }
+        },
+        {
+          "name": "Get Learning Context",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/context/:taskId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "context", ":taskId"] }
+          }
+        },
+        {
+          "name": "Upsert Learning Context",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"rules\": {\n    \"prerequisites\": [\"html\"]\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/context/:taskId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "context", ":taskId"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Billing",
+      "item": [
+        {
+          "name": "List Plans",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans"] }
+          }
+        },
+        {
+          "name": "Get Plan",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id"] }
+          }
+        },
+        {
+          "name": "Create Plan (Admin)",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Enterprise\",\n  \"code\": \"enterprise\",\n  \"price\": 99,\n  \"currency\": \"USD\",\n  \"billingInterval\": \"monthly\",\n  \"aiTokenLimit\": 1000000\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans"] }
+          }
+        },
+        {
+          "name": "Update Plan (Admin)",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"aiTokenLimit\": 250000\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id"] }
+          }
+        },
+        {
+          "name": "Set Default Plan (Admin)",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id/default", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id", "default"] }
+          }
+        },
+        {
+          "name": "Get My Usage",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/usage/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "usage", "me"] }
+          }
+        },
+        {
+          "name": "Set User Plan (Admin)",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"planId\": \"<planId>\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/usage/:userId/plan", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "usage", ":userId", "plan"] }
+          }
+        }
+      ]
+    }
+  ]
+}

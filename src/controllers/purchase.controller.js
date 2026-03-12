@@ -1,60 +1,42 @@
-import { Roadmap } from "../models/roadmap/Roadmap.model.js";
-import { Purchase } from "../models/Profile/purchase.model.js";
-import { Enrollment } from "../models/Progress/Enrollment.modal.js";
-import { AppError } from "../middleware/ErrorHanlder.js";
-import crypto from "crypto";
+import {
+  createRoadmapPurchase,
+  listMyPurchases,
+  getPurchaseById
+} from "../services/purchase.service.js";
+import { catchAsyncError } from "../middleware/CatchAsyncError.js";
 
-/* ========================= CREATE PURCHASE ========================= */
-export const createRoadmapPurchase = async (userId, roadmapId) => {
-  const roadmap = await Roadmap.findById(roadmapId);
+export const createRoadmapPurchaseController = catchAsyncError(
+  async (req, res) => {
+    const result = await createRoadmapPurchase(
+      req.user.id,
+      req.params.roadmapId
+    );
 
-  if (!roadmap || !roadmap.isPublished) {
-    throw new AppError("Roadmap not available", 404);
+    res.status(201).json({
+      success: true,
+      ...result
+    });
   }
+);
 
-  if (!roadmap.isPaid) {
-    throw new AppError("This roadmap is free. No purchase required.", 400);
-  }
+export const listMyPurchasesController = catchAsyncError(async (req, res) => {
+  const result = await listMyPurchases(req.user.id);
 
-  // prevent double purchase
-  const existingPurchase = await Purchase.findOne({
-    userId,
-    roadmapId,
-    status: "success"
+  res.status(200).json({
+    success: true,
+    ...result
   });
+});
 
-  if (existingPurchase) {
-    throw new AppError("Roadmap already purchased", 400);
-  }
+export const getPurchaseByIdController = catchAsyncError(async (req, res) => {
+  const purchase = await getPurchaseById(
+    req.params.id,
+    req.user.id,
+    req.user.role === "admin"
+  );
 
-  // prevent active enrollment without payment
-  const existingEnrollment = await Enrollment.findOne({
-    userId,
-    roadmapId,
-    status: "active"
+  res.status(200).json({
+    success: true,
+    purchase
   });
-
-  if (existingEnrollment) {
-    throw new AppError("Already enrolled in this roadmap", 400);
-  }
-
-  // generate orderId (replace with Razorpay order later)
-  const orderId = `order_${crypto.randomUUID()}`;
-
-  const purchase = await Purchase.create({
-    userId,
-    roadmapId,
-    amount: roadmap.price,
-    provider: "razorpay",
-    orderId,
-    status: "pending"
-  });
-
-  return {
-    message: "Purchase initiated",
-    purchaseId: purchase._id,
-    orderId,
-    amount: roadmap.price,
-    currency: "INR"
-  };
-};
+});

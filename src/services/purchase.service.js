@@ -58,3 +58,31 @@ export const createRoadmapPurchase = async (userId, roadmapId) => {
     currency: "INR"
   };
 };
+
+/* ========================= LIST MY PURCHASES ========================= */
+export const listMyPurchases = async (userId) => {
+  const purchases = await Purchase.find({ userId })
+    .sort({ createdAt: -1 })
+    .populate("roadmapId", "title level isPaid price");
+
+  return {
+    message: "Purchases fetched successfully",
+    count: purchases.length,
+    purchases
+  };
+};
+
+/* ========================= GET PURCHASE ========================= */
+export const getPurchaseById = async (purchaseId, userId, isAdmin = false) => {
+  const query = isAdmin ? { _id: purchaseId } : { _id: purchaseId, userId };
+  const purchase = await Purchase.findOne(query).populate(
+    "roadmapId",
+    "title level isPaid price"
+  );
+
+  if (!purchase) {
+    throw new AppError("Purchase not found", 404);
+  }
+
+  return purchase;
+};

@@ -2803,3 +2803,51 @@
   service: 'careernav-api',
   timestamp: '2026-03-01 15:00:23'
 }
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:07'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:09'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:10'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-12 23:28:10'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:10'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:10'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:28:10'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:31:17'
+}

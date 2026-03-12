@@ -3,7 +3,7 @@ const app = express();
 import logger from "./src/config/logger.js";
 import { errorHandler } from "./src/middleware/ErrorHanlder.js";
 import { requestLogger } from "./src/middleware/requestLogger.js";
-import { configureSecurityMiddleware, authLimiter, strictLimiter } from "./src/config/security.js";
+import { configureSecurityMiddleware, authLimiter, strictLimiter, generalLimiter } from "./src/config/security.js";
 import cookieParser from "cookie-parser";
 import AuthRouter from "./src/routes/auth.route.js";
 import UserRouter from "./src/routes/user.route.js";
@@ -19,12 +19,17 @@ import NotificationRouter from "./src/routes/notification.route.js";
 import ProjectSubmissionRouter from "./src/routes/projectSubmission.route.js";
 import TaskSubmissionRouter from "./src/routes/taskSubmission.route.js";
 import ProgressRouter from "./src/routes/progress.route.js";
+import PurchaseRouter from "./src/routes/purchase.route.js";
+import RoleProfileRouter from "./src/routes/roleProfile.route.js";
+import MentorProfileRouter from "./src/routes/mentorProfile.route.js";
+import AiRouter from "./src/routes/ai.route.js";
+import BillingRouter from "./src/routes/billing.route.js";
 
 // Trust proxy for accurate IP addresses
 app.set('trust proxy', 1);
 
-// Configure security middleware first
-configureSecurityMiddleware(app);
+// Configure security middleware first (skip general limiter for health/root)
+configureSecurityMiddleware(app, { applyGeneralLimiter: false });
 
 // Body parsing with size limits
 app.use(express.json({ 
@@ -63,6 +68,9 @@ app.get("/", async (req, res) => {
     });
 });
 
+// Apply general rate limiting after health/root
+app.use(generalLimiter);
+
 // API Routes with specific rate limiting
 app.use(`${process.env.VERSION}/auth/login`, authLimiter);
 app.use(`${process.env.VERSION}/auth/register`, authLimiter);
@@ -82,6 +90,11 @@ app.use(`${process.env.VERSION}/notifications`, NotificationRouter);
 app.use(`${process.env.VERSION}/project-submissions`, ProjectSubmissionRouter);
 app.use(`${process.env.VERSION}/task-submissions`, TaskSubmissionRouter);
 app.use(`${process.env.VERSION}/progress`, ProgressRouter);
+app.use(`${process.env.VERSION}/purchases`, PurchaseRouter);
+app.use(`${process.env.VERSION}/role-profiles`, RoleProfileRouter);
+app.use(`${process.env.VERSION}/mentor-profiles`, MentorProfileRouter);
+app.use(`${process.env.VERSION}/ai`, AiRouter);
+app.use(`${process.env.VERSION}/billing`, BillingRouter);
 
 // 404 Handler (AFTER ROUTES)
 app.use((req, res) => {
