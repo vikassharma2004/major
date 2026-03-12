@@ -9,6 +9,7 @@ import {
   sendMessageController
 } from "../controllers/ai.controller.js";
 import { authenticate } from "../middleware/Auth.middleware.js";
+import { aiLimiter } from "../config/security.js";
 
 const AiRouter = express.Router();
 
@@ -18,6 +19,7 @@ AiRouter.get("/conversations/:id", authenticate, getConversationController);
 AiRouter.post(
   "/conversations/:id/messages",
   authenticate,
+  aiLimiter,
   sendMessageController
 );
 AiRouter.post(

@@ -33,6 +33,10 @@ const usageSchema = new mongoose.Schema(
       type: Number,
       required: true
     },
+    planExpiresAt: {
+      type: Date,
+      default: null
+    },
     lastConsumedAt: {
       type: Date
     }

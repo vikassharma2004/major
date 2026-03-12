@@ -12,8 +12,7 @@ const billingPlanSchema = new mongoose.Schema(
       required: true,
       unique: true,
       lowercase: true,
-      trim: true,
-      index: true
+      trim: true
     },
     description: {
       type: String,

@@ -13,8 +13,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
     lowercase: true,
-    trim: true,
-    index: true
+    trim: true
   },
   passwordHash: {
     type: String,
@@ -47,8 +46,7 @@ const userSchema = new mongoose.Schema({
     index: true
   },
   lastLoginAt: {
-    type: Date,
-    index: true
+    type: Date
   },
   tokenVersion: {
     type: Number,
@@ -137,7 +135,6 @@ userSchema.statics.getFailedLoginReasons = function() {
 };
 
 // Indexes for performance
-userSchema.index({ email: 1 }, { unique: true });
 userSchema.index({ status: 1, createdAt: -1 });
 userSchema.index({ lastLoginAt: 1 });
 userSchema.index({ role: 1, status: 1 });

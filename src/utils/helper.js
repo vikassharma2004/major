@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { blacklistToken } from "../config/redis.js";
+import { blacklistToken } from "../config/cache.js";
 import { configDotenv } from "dotenv";
 configDotenv();
 

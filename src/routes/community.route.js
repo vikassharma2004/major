@@ -24,6 +24,7 @@ import {
   markCommunityReadController
 } from "../controllers/communityMessage.controller.js";
 import { authorizeRoles } from "../middleware/role.middleware.js";
+import { communityMessageLimiter } from "../config/security.js";
 
 const CommunityRouter = express.Router();
 
@@ -88,6 +89,7 @@ CommunityRouter.get(
 CommunityRouter.post(
   "/:communityId/messages",
   authenticate,
+  communityMessageLimiter,
   createCommunityMessageController
 );
 
@@ -95,6 +97,7 @@ CommunityRouter.post(
 CommunityRouter.patch(
   "/:communityId/messages/:messageId",
   authenticate,
+  communityMessageLimiter,
   editCommunityMessageController
 );
 
@@ -102,6 +105,7 @@ CommunityRouter.patch(
 CommunityRouter.delete(
   "/:communityId/messages/:messageId",
   authenticate,
+  communityMessageLimiter,
   deleteCommunityMessageController
 );
 
@@ -125,6 +129,7 @@ CommunityRouter.patch(
 CommunityRouter.post(
   "/:communityId/messages/:messageId/reactions",
   authenticate,
+  communityMessageLimiter,
   addReactionController
 );
 
@@ -132,6 +137,7 @@ CommunityRouter.post(
 CommunityRouter.delete(
   "/:communityId/messages/:messageId/reactions",
   authenticate,
+  communityMessageLimiter,
   removeReactionController
 );
 

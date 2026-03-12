@@ -2851,3 +2851,129 @@
   service: 'careernav-api',
   timestamp: '2026-03-12 23:31:17'
 }
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:16'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:18'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:18'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:19'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:19'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-12 23:41:21'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:21'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:21'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:41:21'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:32'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:34'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:36'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:40'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:40'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:40'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-12 23:42:43'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:43'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:43'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:43'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:42:45'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-12 23:46:03'
+}

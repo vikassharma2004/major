@@ -2,6 +2,7 @@ import { Server } from "socket.io";
 import jwt from "jsonwebtoken";
 import logger from "../config/logger.js";
 import { CommunityMember } from "../models/Community/CommunityMember.model.js";
+import { buildCacheKey, getCache, setCache } from "../config/cache.js";
 import {
   createMessage,
   editMessage,
@@ -20,8 +21,13 @@ import {
 let io;
 
 const getAllowedOrigins = () => {
+  const envOrigins = (process.env.CORS_ORIGIN || "")
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+
   return [
-    process.env.CORS_ORIGIN,
+    ...envOrigins,
     "http://localhost:3000",
     "http://localhost:3001",
     "https://your-frontend-domain.com"
@@ -87,11 +93,25 @@ export const initSocket = (httpServer) => {
 
     socket.on("community:join", async ({ communityId }, ack) => {
       try {
-        const member = await CommunityMember.findOne({
+        const cacheKey = buildCacheKey("community:member", [
           communityId,
-          userId: socket.userId,
-          isActive: true
-        });
+          socket.userId
+        ]);
+        const cached = getCache(cacheKey);
+
+        let member = cached ? { isActive: true } : null;
+
+        if (!cached) {
+          member = await CommunityMember.findOne({
+            communityId,
+            userId: socket.userId,
+            isActive: true
+          });
+
+          if (member) {
+            setCache(cacheKey, true, 120);
+          }
+        }
 
         if (!member) {
           throw new Error("Not a community member");

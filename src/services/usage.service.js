@@ -88,7 +88,7 @@ export const consumeTokens = async (userId, tokens, reason = "ai") => {
   return usage;
 };
 
-export const setUserPlan = async (userId, planId) => {
+export const setUserPlan = async (userId, planId, expiresAt = null) => {
   const plan = await BillingPlan.findById(planId);
   if (!plan) {
     throw new AppError("Billing plan not found", 404);
@@ -101,6 +101,7 @@ export const setUserPlan = async (userId, planId) => {
 
   usage.planId = plan._id;
   usage.aiTokensLimit = plan.aiTokenLimit;
+  usage.planExpiresAt = expiresAt ? new Date(expiresAt) : null;
   await usage.save();
 
   return usage;
@@ -116,6 +117,7 @@ export const getUsageSummary = async (userId) => {
     aiTokensRemaining: Math.max(0, usage.aiTokensLimit - usage.aiTokensUsed),
     periodStart: usage.periodStart,
     periodEnd: usage.periodEnd,
+    planExpiresAt: usage.planExpiresAt,
     lastConsumedAt: usage.lastConsumedAt
   };
 };

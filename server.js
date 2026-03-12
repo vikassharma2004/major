@@ -1,11 +1,12 @@
 import app from "./app.js";
 import { connectDB } from "./src/config/db.config.js";
-import { connectRedis } from "./src/config/redis.js";
+import { initCache } from "./src/config/cache.js";
 import logger from "./src/config/logger.js";
 import { configDotenv } from "dotenv";
 import { checkGeminiConnection } from "./src/config/Aiconfig.js";
 import { createServer } from "http";
 import { initSocket } from "./src/sockets/index.js";
+import { startJobs } from "./src/jobs/index.js";
 
 // Load environment variables first
 configDotenv();
@@ -55,7 +56,8 @@ const server = httpServer.listen(PORT, async () => {
     try {
         // Connect to databases
         await connectDB();
-        // await connectRedis(); // Redis is optional, won't fail if unavailable
+        initCache();
+        startJobs();
        const {status, model}= await checkGeminiConnection();
        logger.info(status, model)
         logger.info(`🚀 CareerNav API Server running on http://localhost:${PORT}`);

@@ -41,6 +41,53 @@ export const strictLimiter = rateLimit({
   legacyHeaders: false
 });
 
+const getRateLimitKey = (req) => {
+  const userId = req.user?.id;
+  const ip = req.ip;
+  return userId ? `user:${userId}` : `ip:${ip}`;
+};
+
+export const createRateLimiter = ({ windowMs, max, message }) =>
+  rateLimit({
+    windowMs,
+    max,
+    message: message || {
+      error: "Too many requests",
+      message: "Please try again later"
+    },
+    standardHeaders: true,
+    legacyHeaders: false,
+    keyGenerator: getRateLimitKey
+  });
+
+// Targeted limiters
+export const aiLimiter = createRateLimiter({
+  windowMs: 60 * 1000,
+  max: 30,
+  message: {
+    error: "AI rate limit exceeded",
+    message: "Please wait before sending more AI requests"
+  }
+});
+
+export const communityMessageLimiter = createRateLimiter({
+  windowMs: 60 * 1000,
+  max: 60,
+  message: {
+    error: "Message rate limit exceeded",
+    message: "Please slow down and try again"
+  }
+});
+
+export const writeLimiter = createRateLimiter({
+  windowMs: 60 * 1000,
+  max: 40,
+  message: {
+    error: "Write rate limit exceeded",
+    message: "Too many write operations. Please try again shortly."
+  }
+});
+
 // Security middleware configuration
 export const configureSecurityMiddleware = (app, options = {}) => {
   // Helmet for security headers

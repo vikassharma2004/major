@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { AppError } from "../middleware/ErrorHanlder.js";
 import { generateTokens, setAuthCookies } from "../utils/helper.js";
 import { User } from "../models/Auth/User.model.js";
-import { isTokenBlacklisted } from "../config/redis.js";
+import { isTokenBlacklisted } from "../config/cache.js";
 import { securityLogger } from "./requestLogger.js";
 import logger from "../config/logger.js";
 import { configDotenv } from "dotenv";

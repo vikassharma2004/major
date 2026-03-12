@@ -44,6 +44,10 @@ export const getMyUsageController = catchAsyncError(async (req, res) => {
 });
 
 export const setUserPlanController = catchAsyncError(async (req, res) => {
-  const usage = await setUserPlan(req.params.userId, req.body.planId);
+  const usage = await setUserPlan(
+    req.params.userId,
+    req.body.planId,
+    req.body.expiresAt
+  );
   res.status(200).json({ success: true, usage });
 });

@@ -842,6 +842,43 @@
           }
         }
       ]
+    },
+    {
+      "name": "Mentor Onboarding",
+      "item": [
+        {
+          "name": "Apply",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"expertise\": [\"frontend\"],\n  \"experienceYears\": 3,\n  \"bio\": \"I love teaching\",\n  \"portfolioUrl\": \"https://example.com\",\n  \"linkedInUrl\": \"https://linkedin.com/in/example\",\n  \"availability\": \"Weekends\",\n  \"motivation\": \"Help learners\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/apply", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", "apply"] }
+          }
+        },
+        {
+          "name": "Get My Application",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", "me"] }
+          }
+        },
+        {
+          "name": "List Applications (Admin)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding"] }
+          }
+        },
+        {
+          "name": "Review Application (Admin)",
+          "request": {
+            "method": "PATCH",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"notes\": \"Welcome aboard\"\n}" },
+            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", ":id", "review"] }
+          }
+        }
+      ]
     }
   ]
 }

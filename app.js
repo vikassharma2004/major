@@ -24,6 +24,7 @@ import RoleProfileRouter from "./src/routes/roleProfile.route.js";
 import MentorProfileRouter from "./src/routes/mentorProfile.route.js";
 import AiRouter from "./src/routes/ai.route.js";
 import BillingRouter from "./src/routes/billing.route.js";
+import MentorOnboardingRouter from "./src/routes/mentorOnboarding.route.js";
 
 // Trust proxy for accurate IP addresses
 app.set('trust proxy', 1);
@@ -95,6 +96,7 @@ app.use(`${process.env.VERSION}/role-profiles`, RoleProfileRouter);
 app.use(`${process.env.VERSION}/mentor-profiles`, MentorProfileRouter);
 app.use(`${process.env.VERSION}/ai`, AiRouter);
 app.use(`${process.env.VERSION}/billing`, BillingRouter);
+app.use(`${process.env.VERSION}/mentor-onboarding`, MentorOnboardingRouter);
 
 // 404 Handler (AFTER ROUTES)
 app.use((req, res) => {

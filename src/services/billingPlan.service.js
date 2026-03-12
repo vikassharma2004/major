@@ -1,5 +1,6 @@
 import { BillingPlan } from "../models/monetization/BillingPlan.model.js";
 import { AppError } from "../middleware/ErrorHanlder.js";
+import { buildCacheKey, delCache, getCache, setCache } from "../config/cache.js";
 
 const DEFAULT_PLANS = [
   {
@@ -32,6 +33,16 @@ const DEFAULT_PLANS = [
     billingInterval: "monthly",
     aiTokenLimit: 500000,
     features: ["Advanced AI guidance", "Priority support", "Mentor sessions"]
+  },
+  {
+    name: "Enterprise",
+    code: "enterprise",
+    description: "Enterprise-grade plan with the highest AI limits.",
+    price: 99,
+    currency: "USD",
+    billingInterval: "monthly",
+    aiTokenLimit: 1000000,
+    features: ["Enterprise support", "Custom onboarding", "SLA guarantees"]
   }
 ];
 
@@ -57,19 +68,32 @@ export const ensureDefaultPlans = async () => {
 };
 
 export const listBillingPlans = async () => {
-  return ensureDefaultPlans();
+  const cacheKey = buildCacheKey("billing:plans", ["active"]);
+  const cached = getCache(cacheKey);
+  if (cached) return cached;
+
+  const plans = await ensureDefaultPlans();
+  setCache(cacheKey, plans, 300);
+  return plans;
 };
 
 export const getBillingPlanById = async (planId) => {
+  const cacheKey = buildCacheKey("billing:plan", [planId]);
+  const cached = getCache(cacheKey);
+  if (cached) return cached;
+
   const plan = await BillingPlan.findById(planId);
   if (!plan) {
     throw new AppError("Billing plan not found", 404);
   }
+
+  setCache(cacheKey, plan, 300);
   return plan;
 };
 
 export const createBillingPlan = async (payload) => {
   const plan = await BillingPlan.create(payload);
+  delCache(buildCacheKey("billing:plans", ["active"]));
   return plan;
 };
 
@@ -82,6 +106,8 @@ export const updateBillingPlan = async (planId, payload) => {
     throw new AppError("Billing plan not found", 404);
   }
 
+  delCache(buildCacheKey("billing:plans", ["active"]));
+  delCache(buildCacheKey("billing:plan", [planId]));
   return plan;
 };
 
@@ -99,5 +125,7 @@ export const setDefaultBillingPlan = async (planId) => {
   plan.isDefault = true;
   await plan.save();
 
+  delCache(buildCacheKey("billing:plans", ["active"]));
+  delCache(buildCacheKey("billing:plan", [planId]));
   return plan;
 };
