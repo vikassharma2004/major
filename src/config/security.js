@@ -138,14 +138,11 @@ export const configureSecurityMiddleware = (app, options = {}) => {
   app.use(compression());
 
   // Sanitize data
-  app.use(
-  mongoSanitize({
-    replaceWith: "_"
-  })
-);
+  // app.use(mongoSanitize()
+
 
   // XSS protection
-  app.use(xss());
+  // app.use(xss());
 
   // General rate limiting
   if (options.applyGeneralLimiter !== false) {

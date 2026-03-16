@@ -2977,3 +2977,2217 @@
   service: 'careernav-api',
   timestamp: '2026-03-12 23:46:03'
 }
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:08'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:10'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:10'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:10'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:11'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-15 21:14:12'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:12'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:12'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:12'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:38'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:46'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:49'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:49'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:49'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:49'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-15 21:14:51'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:3000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:51'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:51'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:14:51'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:47'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:53'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:55'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:55'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:55'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:56'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-15 21:18:56'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:56'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:56'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:18:56'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-15 21:19:15',
+  level: 'error'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-15 21:22:49'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:20'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:25'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:27'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:27'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:27'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:29:30'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:30'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:30'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:29:30'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:31:03',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:31:11',
+  level: 'error'
+}
+{
+  message: 'MongoDB disconnected',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:26'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:48'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:55'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:56'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:56'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:56'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:57'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:31:58'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:58'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:58'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:58'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:32:16',
+  level: 'error'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:09'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:10'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:10'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:10'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:11'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:33:11'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:11'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:11'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:33:11'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:33:30'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  email: 'be@fixlsolutions.com',
+  level: 'warn',
+  message: 'Security event: Login attempt with non-existent email',
+  timestamp: '2026-03-16 08:33:30'
+}
+{
+  service: 'careernav-api',
+  message: 'Client Error Invalid credentials',
+  statusCode: 401,
+  type: 'UnknownError',
+  stack: 'Error: Invalid credentials\n' +
+    '    at loginService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:108:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:44:24',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: { email: 'be@fixlsolutions.com', password: '123456' },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:33:30',
+  level: 'warn'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'warn',
+  message: 'Security violation: Invalid credentials',
+  timestamp: '2026-03-16 08:33:30'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 401,
+  responseTime: '169ms',
+  timestamp: '2026-03-16 08:33:30',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:33:39'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  email: 'be@fixlsolutions.com',
+  level: 'warn',
+  message: 'Security event: Login attempt with non-existent email',
+  timestamp: '2026-03-16 08:33:40'
+}
+{
+  service: 'careernav-api',
+  message: 'Client Error Invalid credentials',
+  statusCode: 401,
+  type: 'UnknownError',
+  stack: 'Error: Invalid credentials\n' +
+    '    at loginService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:108:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:44:24',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: { email: 'be@fixlsolutions.com', password: '12345678' },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:33:40',
+  level: 'warn'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'warn',
+  message: 'Security violation: Invalid credentials',
+  timestamp: '2026-03-16 08:33:40'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 401,
+  responseTime: '173ms',
+  timestamp: '2026-03-16 08:33:40',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:34:29'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:34:29',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '621ms',
+  timestamp: '2026-03-16 08:34:29',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:16'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:17'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:17'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:17'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:18'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:35:19'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:19'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:19'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:19'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:35:24'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:35:25',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '867ms',
+  timestamp: '2026-03-16 08:35:25',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:45'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:47'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:47'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:47'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:48'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:35:48'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:48'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:48'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:35:48'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:35:58'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:35:59',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '841ms',
+  timestamp: '2026-03-16 08:35:59',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:10'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:21'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:24'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:28'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:37'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:45'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:45'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:45'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:48'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:37:48'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:48'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:48'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:37:48'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:37:57'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:38:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:37:58',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '730ms',
+  timestamp: '2026-03-16 08:37:58',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:12'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:13'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:13'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:14'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:15'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:39:15'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:15'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:15'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:15'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:31'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:35'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:36'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:36'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:36'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:39'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:40'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:40'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:40'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:41'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 08:39:42'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:42'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:42'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:42'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:39:49'
+}
+{
+  message: 'Mail sent: <2478bd59-cee8-98cb-35ac-0a9f1a3f21e9@gmail.com>',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:55'
+}
+{
+  service: 'careernav-api',
+  type: 'audit',
+  action: 'User registered',
+  userId: new ObjectId('69b7747ea3dd5fad3345ba6f'),
+  resource: 'User',
+  timestamp: '2026-03-16 08:39:55',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  url: '/api/v1/auth/register',
+  method: 'POST',
+  email: 'vikasfixel@gmail.com',
+  level: 'info',
+  message: 'Audit log'
+}
+{
+  message: 'User registered successfully: vikasfixel@gmail.com',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:39:55'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 201,
+  responseTime: '5911ms',
+  timestamp: '2026-03-16 08:39:55',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/verify-email',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:40:18'
+}
+{
+  service: 'careernav-api',
+  type: 'audit',
+  action: 'Email verified',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  resource: 'Auth',
+  timestamp: '2026-03-16 08:40:19',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  url: '/api/v1/auth/verify-email',
+  method: 'POST',
+  level: 'info',
+  message: 'Audit log'
+}
+{
+  message: 'Email verified for userId: 69b7747ea3dd5fad3345ba6f',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:40:19'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/verify-email',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '307ms',
+  timestamp: '2026-03-16 08:40:19',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:40:41'
+}
+{
+  service: 'careernav-api',
+  type: 'audit',
+  action: 'User logged in',
+  userId: new ObjectId('69b7747ea3dd5fad3345ba6f'),
+  resource: 'Auth',
+  timestamp: '2026-03-16 08:40:42',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'info',
+  message: 'Audit log'
+}
+{
+  message: 'User logged in successfully: vikasfixel@gmail.com',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:40:42'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '779ms',
+  timestamp: '2026-03-16 08:40:42',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:41:41'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 200,
+  responseTime: '130ms',
+  timestamp: '2026-03-16 08:41:41',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:41:41'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '155ms',
+  timestamp: '2026-03-16 08:41:41',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/mentor-onboarding/apply',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:42:33'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/mentor-onboarding/apply',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 201,
+  responseTime: '162ms',
+  timestamp: '2026-03-16 08:42:33',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/user/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:42:33'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/user/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 200,
+  responseTime: '137ms',
+  timestamp: '2026-03-16 08:42:33',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:58:56'
+}
+{
+  service: 'careernav-api',
+  userId: new ObjectId('69b7747ea3dd5fad3345ba6f'),
+  level: 'info',
+  message: 'Token refreshed successfully',
+  timestamp: '2026-03-16 08:58:57'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 200,
+  responseTime: '358ms',
+  timestamp: '2026-03-16 08:58:57',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:58:57'
+}
+{
+  service: 'careernav-api',
+  userId: new ObjectId('69b7747ea3dd5fad3345ba6f'),
+  level: 'info',
+  message: 'Token refreshed successfully',
+  timestamp: '2026-03-16 08:58:57'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '263ms',
+  timestamp: '2026-03-16 08:58:57',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:59:05'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '329ms',
+  timestamp: '2026-03-16 08:59:05',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:59:05'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '172ms',
+  timestamp: '2026-03-16 08:59:05',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:59:39'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '114ms',
+  timestamp: '2026-03-16 08:59:39',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:59:39'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/mentor-onboarding/me',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: '69b7747ea3dd5fad3345ba6f',
+  statusCode: 304,
+  responseTime: '87ms',
+  timestamp: '2026-03-16 08:59:39',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/logout',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 08:59:49'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/logout',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '9ms',
+  timestamp: '2026-03-16 08:59:49',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:19:32'
+}
+{
+  service: 'careernav-api',
+  type: 'audit',
+  action: 'User logged in',
+  userId: new ObjectId('69b7747ea3dd5fad3345ba6f'),
+  resource: 'Auth',
+  timestamp: '2026-03-16 09:19:33',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'info',
+  message: 'Audit log'
+}
+{
+  message: 'User logged in successfully: vikasfixel@gmail.com',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:19:33'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '1122ms',
+  timestamp: '2026-03-16 09:19:33',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?limit=4',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '58ms',
+  timestamp: '2026-03-16 09:19:34',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?limit=4',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '18ms',
+  timestamp: '2026-03-16 09:19:34',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmaps?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:19:55'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?page=1&limit=12',
+  timestamp: '2026-03-16 09:19:55'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '11ms',
+  timestamp: '2026-03-16 09:19:55',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:21:58'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '152ms',
+  timestamp: '2026-03-16 09:21:59',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:15'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '138ms',
+  timestamp: '2026-03-16 09:22:15',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:35'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '142ms',
+  timestamp: '2026-03-16 09:22:35',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:35'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '206ms',
+  timestamp: '2026-03-16 09:22:35',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:43'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '152ms',
+  timestamp: '2026-03-16 09:22:43',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:49'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '115ms',
+  timestamp: '2026-03-16 09:22:49',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:49'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '318ms',
+  timestamp: '2026-03-16 09:22:49',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:22:56'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '173ms',
+  timestamp: '2026-03-16 09:22:56',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:24:02'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '181ms',
+  timestamp: '2026-03-16 09:24:02',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12&isPaid=false',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:24:11'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12&isPaid=false',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '264ms',
+  timestamp: '2026-03-16 09:24:12',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12&isPaid=true',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:24:13'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12&isPaid=true',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '82ms',
+  timestamp: '2026-03-16 09:24:13',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:24:15'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '123ms',
+  timestamp: '2026-03-16 09:24:15',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:25:35'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '249ms',
+  timestamp: '2026-03-16 09:25:35',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:25:38'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 200,
+  responseTime: '413ms',
+  timestamp: '2026-03-16 09:25:38',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  service: 'careernav-api',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  level: 'info',
+  message: 'Request started',
+  timestamp: '2026-03-16 09:25:38'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmap?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 304,
+  responseTime: '254ms',
+  timestamp: '2026-03-16 09:25:38',
+  level: 'info',
+  message: 'HTTP Request'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:23'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:25'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:25'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:25'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:26'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 09:26:27'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:27'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:27'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:26:27'
+}
+{
+  message: 'Socket.io initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:03'
+}
+{
+  message: 'MongoDB connected successfully',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:04'
+}
+{
+  message: 'NodeCache initialized',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:04'
+}
+{
+  message: 'Billing cron jobs scheduled',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:04'
+}
+{
+  message: 'SMTP server is ready',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:05'
+}
+{
+  service: 'careernav-api',
+  level: 'info',
+  message: 'connected',
+  timestamp: '2026-03-16 09:29:06'
+}
+{
+  message: '🚀 CareerNav API Server running on http://localhost:5000',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:06'
+}
+{
+  message: '📝 Environment: production',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:06'
+}
+{
+  message: '🔧 API Version: /api/v1',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:29:06'
+}
+{
+  message: 'Received SIGINT. Starting graceful shutdown...',
+  level: 'info',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 09:32:52'
+}

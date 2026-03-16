@@ -2215,3 +2215,481 @@
     '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
   timestamp: '2026-02-26 04:05:21'
 }
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:113:18\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\express-mongo-sanitize\\index.js:110:44\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-15 21:19:15',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:31:03',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:31:11',
+  level: 'error'
+}
+{
+  message: 'MongoDB disconnected',
+  level: 'warn',
+  service: 'careernav-api',
+  timestamp: '2026-03-16 08:31:26'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error Cannot set property query of #<IncomingMessage> which has only a getter',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: Cannot set property query of #<IncomingMessage> which has only a getter\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\xss-clean\\lib\\index.js:8:30\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9\n' +
+    '    at processParams (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:291:5)\n' +
+    '    at compression (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\compression\\index.js:243:5)\n' +
+    '    at Layer.handleRequest (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at trimPrefix (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:342:13)\n' +
+    '    at C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\router\\index.js:297:9',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: undefined,
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:32:16',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  email: 'be@fixlsolutions.com',
+  level: 'warn',
+  message: 'Security event: Login attempt with non-existent email',
+  timestamp: '2026-03-16 08:33:30'
+}
+{
+  service: 'careernav-api',
+  message: 'Client Error Invalid credentials',
+  statusCode: 401,
+  type: 'UnknownError',
+  stack: 'Error: Invalid credentials\n' +
+    '    at loginService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:108:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:44:24',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: { email: 'be@fixlsolutions.com', password: '123456' },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:33:30',
+  level: 'warn'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'warn',
+  message: 'Security violation: Invalid credentials',
+  timestamp: '2026-03-16 08:33:30'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 401,
+  responseTime: '169ms',
+  timestamp: '2026-03-16 08:33:30',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  email: 'be@fixlsolutions.com',
+  level: 'warn',
+  message: 'Security event: Login attempt with non-existent email',
+  timestamp: '2026-03-16 08:33:40'
+}
+{
+  service: 'careernav-api',
+  message: 'Client Error Invalid credentials',
+  statusCode: 401,
+  type: 'UnknownError',
+  stack: 'Error: Invalid credentials\n' +
+    '    at loginService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:108:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:44:24',
+  route: '/api/v1/auth/login',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: { email: 'be@fixlsolutions.com', password: '12345678' },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:33:40',
+  level: 'warn'
+}
+{
+  service: 'careernav-api',
+  type: 'security',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  url: '/api/v1/auth/login',
+  method: 'POST',
+  level: 'warn',
+  message: 'Security violation: Invalid credentials',
+  timestamp: '2026-03-16 08:33:40'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 401,
+  responseTime: '173ms',
+  timestamp: '2026-03-16 08:33:40',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:34:29',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '621ms',
+  timestamp: '2026-03-16 08:34:29',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:35:25',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '867ms',
+  timestamp: '2026-03-16 08:35:25',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:36:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:35:59',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '841ms',
+  timestamp: '2026-03-16 08:35:59',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  message: 'Server Error next is not a function',
+  statusCode: 500,
+  type: 'UnknownError',
+  stack: 'TypeError: next is not a function\n' +
+    '    at model.<anonymous> (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/models/Auth/User.model.js:91:3)\n' +
+    '    at Kareem.execPre (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\kareem\\index.js:63:39)\n' +
+    '    at async model.$__save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:369:5)\n' +
+    '    at async model.save (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:609:5)\n' +
+    '    at async C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2722:9\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async Function.create (C:\\Users\\vikas\\OneDrive\\Desktop\\Major\\server\\node_modules\\mongoose\\lib\\model.js:2707:11)\n' +
+    '    at async registerService (file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/services/auth.service.js:38:16)\n' +
+    '    at async file:///C:/Users/vikas/OneDrive/Desktop/Major/server/src/controllers/auth.controller.js:27:24',
+  route: '/api/v1/auth/register',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  body: {
+    name: 'vikas',
+    email: 'vikasfixel@gmail.com',
+    password: 'Vikas_shr@2004',
+    confirmPassword: 'Vikas_shr@2004'
+  },
+  query: [Object: null prototype] {},
+  params: {},
+  timestamp: '2026-03-16 08:37:58',
+  level: 'error'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 500,
+  responseTime: '730ms',
+  timestamp: '2026-03-16 08:37:58',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?limit=4',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '58ms',
+  timestamp: '2026-03-16 09:19:34',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?limit=4',
+  timestamp: '2026-03-16 09:19:34'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?limit=4',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '18ms',
+  timestamp: '2026-03-16 09:19:34',
+  level: 'warn',
+  message: 'HTTP Error'
+}
+{
+  service: 'careernav-api',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  level: 'warn',
+  message: '404 - GET /api/v1/roadmaps?page=1&limit=12',
+  timestamp: '2026-03-16 09:19:55'
+}
+{
+  service: 'careernav-api',
+  type: 'request',
+  method: 'GET',
+  url: '/api/v1/roadmaps?page=1&limit=12',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  userId: undefined,
+  statusCode: 404,
+  responseTime: '11ms',
+  timestamp: '2026-03-16 09:19:55',
+  level: 'warn',
+  message: 'HTTP Error'
+}

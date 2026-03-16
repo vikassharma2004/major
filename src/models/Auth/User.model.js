@@ -71,24 +71,19 @@ userSchema.virtual('isLocked').get(function() {
 });
 
 // Pre-save middleware
-userSchema.pre('save', function(next) {
-  // Update passwordChangedAt when password is modified
+userSchema.pre('save', async function () {
   if (this.isModified('passwordHash') && !this.isNew) {
     this.passwordChangedAt = new Date();
-    this.tokenVersion = (this.tokenVersion || 0) + 1; // Invalidate existing tokens
+    this.tokenVersion = (this.tokenVersion || 0) + 1;
   }
-  
-  // Normalize email
+
   if (this.isModified('email')) {
     this.email = this.email.toLowerCase().trim();
   }
-  
-  // Normalize name
+
   if (this.isModified('name')) {
     this.name = this.name.trim();
   }
-  
-  next();
 });
 
 // Instance methods

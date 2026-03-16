@@ -82,7 +82,7 @@ app.use(`${process.env.VERSION}/auth`, AuthRouter);
 app.use(`${process.env.VERSION}/user`, UserRouter);
 app.use(`${process.env.VERSION}/roadmap`, RoadmapRouter);
 app.use(`${process.env.VERSION}/roadmap`, RoadmapModuleRouter);
-app.use(`${process.env.VERSION}/roadmaps`, ProjectRouter);
+app.use(`${process.env.VERSION}/roadmap`, ProjectRouter);
 app.use(`${process.env.VERSION}/modules`, RoadmapTaskRouter);
 app.use(`${process.env.VERSION}/tasks`, ResourceRouter);
 app.use(`${process.env.VERSION}`, EnrollmentRouter);

@@ -22,6 +22,7 @@ export const registerService = async (name, email, password, req) => {
   if (!passwordValidation.valid) {
     throw new AppError(passwordValidation.message, 400);
   }
+  
 
   const existingUser = await User.findOne({ email });
   if (existingUser) {
@@ -29,6 +30,7 @@ export const registerService = async (name, email, password, req) => {
     throw new AppError("User already exists", 409);
   }
 
+  
   // 🔐 Hash password with higher salt rounds
   const saltRounds = 12;
   const hashedPassword = await bcrypt.hash(password, saltRounds);
@@ -38,6 +40,7 @@ export const registerService = async (name, email, password, req) => {
     email: email.toLowerCase().trim(),
     passwordHash: hashedPassword
   });
+
 
   // Initialize default usage/billing plan for the user
   await initializeUserUsage(user._id);
@@ -374,6 +377,75 @@ export const changePassword = async (userId, currentPassword, newPassword, req) 
   auditLogger('Password changed', req, 'Security', { userId });
 
   return { message: "Password changed successfully. Please log in again." };
+};
+
+/* ========================= VERIFY EMAIL OTP ========================= */
+export const verifyEmailService = async (userId, otp, req) => {
+  const otpRecord = await OtpToken.findOne({
+    userId,
+    purpose: "email_verification",
+    used: false
+  }).select("+otpHash");
+
+  if (!otpRecord) {
+    throw new AppError("Invalid or expired OTP", 400);
+  }
+
+  const isValid = await otpRecord.verifyOtp(otp);
+  if (!isValid) {
+    securityLogger("Invalid email verification OTP", req, { userId });
+    throw new AppError("Invalid or expired OTP", 400);
+  }
+
+  await User.findByIdAndUpdate(userId, { isEmailVerified: true });
+
+  auditLogger("Email verified", req, "Auth", { userId });
+  logger.info(`Email verified for userId: ${userId}`);
+
+  return { message: "Email verified successfully. You can now sign in." };
+};
+
+/* ========================= RESEND OTP ========================= */
+export const resendOtpService = async (userId, req) => {
+  const user = await User.findById(userId);
+  if (!user) {
+    throw new AppError("User not found", 404);
+  }
+
+  if (user.isEmailVerified) {
+    throw new AppError("Email is already verified", 400);
+  }
+
+  // Delete any existing unused OTPs for this user
+  await OtpToken.deleteMany({ userId, purpose: "email_verification", used: false });
+
+  const { otp } = await OtpToken.createOtp(userId, "email_verification");
+
+  await sendEmail({
+    to: user.email,
+    subject: "CareerNav – Resend: Email Verification OTP",
+    html: `
+      <html>
+        <body style="font-family: Arial, sans-serif; background-color:#f4f6f8; padding:20px;">
+          <div style="max-width:600px; margin:auto; background:#ffffff; padding:24px; border-radius:6px;">
+            <h2 style="color:#111827;">Email Verification</h2>
+            <p>Hello, ${user.name}</p>
+            <p>Here is your new verification OTP:</p>
+            <div style="text-align:center; margin:24px 0;">
+              <h1 style="letter-spacing:6px; margin:0; background:#f3f4f6; padding:16px; border-radius:4px;">${otp}</h1>
+            </div>
+            <p>This OTP is valid for <strong>10 minutes</strong>.</p>
+            <hr style="margin:24px 0;" />
+            <p style="font-size:12px; color:gray;">© ${new Date().getFullYear()} CareerNav. All rights reserved.</p>
+          </div>
+        </body>
+      </html>
+    `,
+  });
+
+  auditLogger("OTP resent", req, "Auth", { userId });
+
+  return { message: "A new OTP has been sent to your email." };
 };
 
 

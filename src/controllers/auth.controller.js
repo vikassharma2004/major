@@ -5,7 +5,9 @@ import {
     refreshTokenService,
     generate2FA as generate2FAService,
     verify2FA as verify2FAService,
-    twoFactorLogin as twoFactorLoginService
+    twoFactorLogin as twoFactorLoginService,
+    verifyEmailService,
+    resendOtpService
 } from "../services/auth.service.js";
 import { catchAsyncError } from "../middleware/CatchAsyncError.js";
 import { AppError } from "../middleware/ErrorHanlder.js";
@@ -19,7 +21,7 @@ import { auditLogger } from "../middleware/requestLogger.js";
 
 export const register = [
     ...registerValidation,
-    catchAsyncError(async (req, res) => {
+    catchAsyncError(async (req, res,next) => {
         const { name, email, password } = req.body;
 
         const result = await registerService(name, email, password, req);
@@ -36,7 +38,7 @@ export const register = [
 
 export const login = [
     ...loginValidation,
-    catchAsyncError(async (req, res) => {
+    catchAsyncError(async (req, res,next) => {
         const { email, password } = req.body;
         
         const result = await loginService(email, password, req);
@@ -118,18 +120,50 @@ export const twoFactorLogin = [
     ...twoFactorTokenValidation,
     catchAsyncError(async (req, res) => {
         const { userId, token } = req.body;
-        
+
         if (!userId) {
             throw new AppError("User ID is required", 400);
         }
-        
+
         const result = await twoFactorLoginService({ userId, token }, req);
-        
+
         setAuthCookies(res, result.accessToken, result.refreshToken);
-        
+
         res.status(200).json({
             success: true,
             message: "2FA login successful"
         });
     })
 ];
+
+/* ========================= VERIFY EMAIL ========================= */
+export const verifyEmailController = catchAsyncError(async (req, res) => {
+    const { userId, otp } = req.body;
+
+    if (!userId || !otp) {
+        throw new AppError("userId and otp are required", 400);
+    }
+
+    const result = await verifyEmailService(userId, otp, req);
+
+    res.status(200).json({
+        success: true,
+        message: result.message
+    });
+});
+
+/* ========================= RESEND OTP ========================= */
+export const resendOtpController = catchAsyncError(async (req, res) => {
+    const { userId } = req.body;
+
+    if (!userId) {
+        throw new AppError("userId is required", 400);
+    }
+
+    const result = await resendOtpService(userId, req);
+
+    res.status(200).json({
+        success: true,
+        message: result.message
+    });
+});
