@@ -2,6 +2,7 @@ import express from "express";
 
 import {
   createRoadmapController,
+  createFullRoadmap,
   updateRoadmapController,
   getRoadmapController,
   getPublishedRoadmapsController,
@@ -39,6 +40,13 @@ RoadmapRouter.get(
 /* ========================= PROTECTED ROUTES ========================= */
 
 // Create roadmap (mentor / admin)
+RoadmapRouter.post(
+  "/full-create",
+  authenticate,
+  authorizeRoles("mentor", "admin"),
+  createFullRoadmap
+);
+
 RoadmapRouter.post(
   "/",
   authenticate,

@@ -1,8 +1,9 @@
 {
   "info": {
+    "_postman_id": "8fce3c1e-3dbf-4db0-a8a2-6a6971f0f001",
     "name": "CareerNav API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": "CareerNav backend API collection (includes new billing, AI, purchases, profiles)."
+    "description": "Full CareerNav backend API collection with dummy payloads aligned to current routes and validators.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
     {
@@ -12,6 +13,78 @@
     {
       "key": "apiVersion",
       "value": "/api/v1"
+    },
+    {
+      "key": "roadmapId",
+      "value": "507f1f77bcf86cd799439011"
+    },
+    {
+      "key": "moduleId",
+      "value": "507f1f77bcf86cd799439012"
+    },
+    {
+      "key": "taskId",
+      "value": "507f1f77bcf86cd799439013"
+    },
+    {
+      "key": "resourceId",
+      "value": "507f1f77bcf86cd799439014"
+    },
+    {
+      "key": "moduleResourceId",
+      "value": "507f1f77bcf86cd799439015"
+    },
+    {
+      "key": "projectId",
+      "value": "507f1f77bcf86cd799439016"
+    },
+    {
+      "key": "projectResourceId",
+      "value": "507f1f77bcf86cd799439017"
+    },
+    {
+      "key": "communityId",
+      "value": "507f1f77bcf86cd799439018"
+    },
+    {
+      "key": "messageId",
+      "value": "507f1f77bcf86cd799439019"
+    },
+    {
+      "key": "notificationId",
+      "value": "507f1f77bcf86cd799439020"
+    },
+    {
+      "key": "progressId",
+      "value": "507f1f77bcf86cd799439021"
+    },
+    {
+      "key": "purchaseId",
+      "value": "507f1f77bcf86cd799439022"
+    },
+    {
+      "key": "conversationId",
+      "value": "507f1f77bcf86cd799439023"
+    },
+    {
+      "key": "planId",
+      "value": "507f1f77bcf86cd799439024"
+    },
+    {
+      "key": "projectSubmissionId",
+      "value": "507f1f77bcf86cd799439025"
+    },
+    {
+      "key": "taskSubmissionId",
+      "value": "507f1f77bcf86cd799439026"
+    },
+    {
+      "key": "mentorApplicationId",
+      "value": "507f1f77bcf86cd799439027"
+    },
+    {
+      "key": "userId",
+      "value": "507f1f77bcf86cd799439028"
     }
   ],
   "item": [
@@ -22,14 +95,14 @@
           "name": "Health",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}/health", "host": ["{{baseUrl}}"], "path": ["health"] }
+            "url": "{{baseUrl}}/health"
           }
         },
         {
           "name": "Root",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}/", "host": ["{{baseUrl}}"], "path": [""] }
+            "url": "{{baseUrl}}/"
           }
         }
       ]
@@ -41,63 +114,123 @@
           "name": "Register",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{baseUrl}}{{apiVersion}}/auth/register",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"Password@123\"\n}"
-            },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/register", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "register"] }
+              "raw": "{\n  \"name\": \"Jane Learner\",\n  \"email\": \"jane.learner@example.com\",\n  \"password\": \"Password@123\"\n}"
+            }
           }
         },
         {
           "name": "Login",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "url": "{{baseUrl}}{{apiVersion}}/auth/login",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"jane@example.com\",\n  \"password\": \"Password@123\"\n}"
-            },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/login", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "login"] }
+              "raw": "{\n  \"email\": \"jane.learner@example.com\",\n  \"password\": \"Password@123\"\n}"
+            }
           }
         },
         {
           "name": "Logout",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/logout", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "logout"] }
+            "url": "{{baseUrl}}{{apiVersion}}/auth/logout"
           }
         },
         {
           "name": "Refresh",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/refresh", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "refresh"] }
+            "url": "{{baseUrl}}{{apiVersion}}/auth/refresh"
+          }
+        },
+        {
+          "name": "Verify Email",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/auth/verify-email",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"otp\": \"123456\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Resend OTP",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/auth/resend-otp",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\"\n}"
+            }
           }
         },
         {
           "name": "2FA Generate",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/2fa/generate", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "2fa", "generate"] }
+            "url": "{{baseUrl}}{{apiVersion}}/auth/2fa/generate"
           }
         },
         {
           "name": "2FA Verify",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"token\": \"123456\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/2fa/verify", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "2fa", "verify"] }
+            "url": "{{baseUrl}}{{apiVersion}}/auth/2fa/verify",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"token\": \"123456\"\n}"
+            }
           }
         },
         {
           "name": "2FA Login",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"userId\": \"<userId>\",\n  \"token\": \"123456\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/auth/login/2fa", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "auth", "login", "2fa"] }
+            "url": "{{baseUrl}}{{apiVersion}}/auth/login/2fa",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"123456\"\n}"
+            }
           }
         }
       ]
@@ -109,41 +242,55 @@
           "name": "Get Me",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/user/me"
           }
         },
         {
           "name": "Update Me",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Jane Updated\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/user/me",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Updated\"\n}"
+            }
           }
         },
         {
           "name": "Change Password",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"currentPassword\": \"Password@123\",\n  \"newPassword\": \"Password@456\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/password", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "password"] }
+            "url": "{{baseUrl}}{{apiVersion}}/user/me/password",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"currentPassword\": \"Password@123\",\n  \"newPassword\": \"Password@456\"\n}"
+            }
           }
         },
         {
           "name": "Disable 2FA",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/2fa", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "2fa"] }
+            "url": "{{baseUrl}}{{apiVersion}}/user/me/2fa"
           }
         },
         {
-          "name": "Update Account",
+          "name": "Deactivate Account",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"status\": \"active\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/user/me/account", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "user", "me", "account"] }
+            "url": "{{baseUrl}}{{apiVersion}}/user/me/account"
           }
         }
       ]
@@ -155,53 +302,86 @@
           "name": "Get My Roadmaps",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/me"
           }
         },
         {
           "name": "List Published Roadmaps",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap"
           }
         },
         {
           "name": "Get Roadmap",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}"
           }
         },
         {
           "name": "Create Roadmap",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Frontend Roadmap\",\n  \"level\": \"beginner\",\n  \"domain\": \"frontend\",\n  \"description\": \"Learn frontend step by step\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Frontend Engineering Roadmap\",\n  \"shortDescription\": \"A practical roadmap to learn frontend engineering from HTML basics to advanced React workflows.\",\n  \"detailedDescription\": \"This roadmap walks learners through HTML, CSS, JavaScript, React, testing, performance, accessibility, and production deployment with hands-on tasks.\",\n  \"learningOutcomes\": [\n    \"Build responsive user interfaces using semantic HTML and CSS.\",\n    \"Write maintainable JavaScript for interactive frontend features.\",\n    \"Create and ship modern React applications with confidence.\"\n  ],\n  \"coverImage\": \"https://images.unsplash.com/photo-1516321318423-f06f85e504b3\",\n  \"domain\": \"frontend\",\n  \"visualOverview\": \"Start with web fundamentals, move into JavaScript and React, then finish with testing, optimization, and deployment.\",\n  \"level\": \"beginner\",\n  \"isPaid\": true,\n  \"price\": 999\n}"
+            }
+          }
+        },
+        {
+          "name": "Create Full Roadmap",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/full-create",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Fullstack Web Development Roadmap\",\n  \"shortDescription\": \"Learn frontend, backend, APIs, databases, and deployment through a complete hands-on roadmap.\",\n  \"detailedDescription\": \"This full roadmap combines modules, tasks, resources, projects, and project resources into a single publish-ready payload.\",\n  \"learningOutcomes\": [\n    \"Build modern client applications with React.\",\n    \"Design backend APIs with Node.js and Express.\",\n    \"Ship a complete fullstack product with deployment and monitoring.\"\n  ],\n  \"coverImage\": \"https://images.unsplash.com/photo-1498050108023-c5249f4df085\",\n  \"domain\": \"fullstack\",\n  \"visualOverview\": \"Frontend fundamentals, API design, database modeling, authentication, and deployment.\",\n  \"level\": \"intermediate\",\n  \"isPaid\": false,\n  \"modules\": [\n    {\n      \"title\": \"Frontend Foundations\",\n      \"description\": \"Understand UI structure, styling, and component thinking.\",\n      \"order\": 1,\n      \"resources\": [\n        {\n          \"type\": \"documentation\",\n          \"title\": \"MDN HTML Introduction\",\n          \"link\": \"https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML\",\n          \"description\": \"Reference material for semantic HTML basics.\",\n          \"learningStage\": \"prerequisite\",\n          \"difficulty\": \"beginner\",\n          \"estimatedTime\": 30,\n          \"order\": 1\n        }\n      ],\n      \"tasks\": [\n        {\n          \"title\": \"Build a semantic landing page\",\n          \"description\": \"Create a responsive landing page using semantic HTML and clean CSS structure.\",\n          \"taskType\": \"implementation\",\n          \"expectedThinking\": \"Break the layout into reusable sections and focus on structure before styling details.\",\n          \"successCriteria\": [\n            \"Semantic HTML tags are used correctly.\",\n            \"The page is responsive on mobile and desktop.\"\n          ],\n          \"allowFullSolution\": false,\n          \"order\": 1,\n          \"resources\": [\n            {\n              \"type\": \"documentation\",\n              \"title\": \"Responsive Design Basics\",\n              \"link\": \"https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design\",\n              \"whyThisResource\": \"Useful for planning breakpoints and layout behavior.\",\n              \"whenToUse\": \"before-task\"\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"projects\": [\n    {\n      \"title\": \"Personal Learning Dashboard\",\n      \"problemStatement\": \"Build a dashboard where a learner can track enrolled roadmaps, module progress, upcoming tasks, and recent activity.\",\n      \"constraints\": [\n        \"Use role-based route protection for learner access.\",\n        \"Persist progress data in a database-backed API.\"\n      ],\n      \"expectedOutcome\": \"A usable fullstack dashboard with authentication, progress tracking, and polished UI states.\",\n      \"difficulty\": \"medium\",\n      \"extensionIdeas\": [\n        \"Add mentor feedback widgets.\",\n        \"Add notification preferences.\"\n      ],\n      \"resources\": [\n        {\n          \"type\": \"github\",\n          \"title\": \"Example Dashboard Architecture\",\n          \"link\": \"https://github.com/vercel/nextjs-dashboard\",\n          \"whyThisResource\": \"Shows practical dashboard information architecture and UI composition.\",\n          \"whenToUse\": \"before-project\"\n        }\n      ]\n    }\n  ]\n}"
+            }
           }
         },
         {
           "name": "Update Roadmap",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"description\": \"Updated description\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"shortDescription\": \"Updated roadmap summary for learners exploring frontend engineering.\",\n  \"level\": \"intermediate\",\n  \"price\": 1499\n}"
+            }
           }
         },
         {
-          "name": "Publish Roadmap",
+          "name": "Toggle Publish Roadmap",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id/publish", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id", "publish"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}/publish"
           }
         },
         {
           "name": "Delete Roadmap",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}"
           }
         }
       ]
@@ -210,35 +390,111 @@
       "name": "Modules",
       "item": [
         {
-          "name": "List Modules",
+          "name": "List Modules By Roadmap",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:roadmapId/modules", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":roadmapId", "modules"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}/modules"
           }
         },
         {
           "name": "Create Module",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"HTML Basics\",\n  \"order\": 1\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/:roadmapId/modules", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", ":roadmapId", "modules"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}/modules",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"JavaScript Foundations\",\n  \"description\": \"Variables, functions, arrays, objects, async flow, and practical debugging.\",\n  \"order\": 1\n}"
+            }
           }
         },
         {
           "name": "Update Module",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Module\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/modules/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "modules", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/modules/{{moduleId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Advanced JavaScript Foundations\",\n  \"description\": \"Updated module scope with more emphasis on asynchronous patterns.\",\n  \"order\": 2\n}"
+            }
           }
         },
         {
           "name": "Delete Module",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmap/modules/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmap", "modules", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/modules/{{moduleId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Module Resources",
+      "item": [
+        {
+          "name": "List Module Resources",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/modules/{{moduleId}}/resources?page=1&limit=10&type=documentation&difficulty=beginner&learningStage=core&sortBy=order&sortOrder=asc"
+          }
+        },
+        {
+          "name": "Get Module Resource",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/modules/resources/{{moduleResourceId}}"
+          }
+        },
+        {
+          "name": "Create Module Resource",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/modules/{{moduleId}}/resources",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"documentation\",\n  \"title\": \"JavaScript Guide\",\n  \"link\": \"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide\",\n  \"description\": \"Reference material covering core JavaScript concepts needed in this module.\",\n  \"learningStage\": \"core\",\n  \"difficulty\": \"beginner\",\n  \"estimatedTime\": 45,\n  \"order\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Module Resource",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}{{apiVersion}}/modules/resources/{{moduleResourceId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"difficulty\": \"intermediate\",\n  \"estimatedTime\": 60,\n  \"order\": 2\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Module Resource",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}{{apiVersion}}/modules/resources/{{moduleResourceId}}"
           }
         }
       ]
@@ -247,72 +503,104 @@
       "name": "Tasks",
       "item": [
         {
-          "name": "List Tasks",
+          "name": "List Tasks By Module",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/:moduleId/tasks", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", ":moduleId", "tasks"] }
+            "url": "{{baseUrl}}{{apiVersion}}/modules/{{moduleId}}/tasks"
           }
         },
         {
           "name": "Create Task",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Build a page\",\n  \"order\": 1\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/:moduleId/tasks", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", ":moduleId", "tasks"] }
+            "url": "{{baseUrl}}{{apiVersion}}/modules/{{moduleId}}/tasks",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Implement a reusable navbar\",\n  \"description\": \"Build a reusable navigation bar component with responsive behavior and active-state styling.\",\n  \"taskType\": \"implementation\",\n  \"expectedThinking\": \"Break the navbar into state, structure, and accessibility concerns before coding.\",\n  \"successCriteria\": [\n    \"Navigation items render from data.\",\n    \"Mobile toggle works correctly.\",\n    \"Keyboard navigation remains accessible.\"\n  ],\n  \"allowFullSolution\": false,\n  \"order\": 1\n}"
+            }
           }
         },
         {
           "name": "Update Task",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Task\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/tasks/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", "tasks", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/modules/tasks/{{taskId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"taskType\": \"debugging\",\n  \"allowFullSolution\": true,\n  \"order\": 2\n}"
+            }
           }
         },
         {
           "name": "Delete Task",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/modules/tasks/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "modules", "tasks", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/modules/tasks/{{taskId}}"
           }
         }
       ]
     },
     {
-      "name": "Resources",
+      "name": "Task Resources",
       "item": [
         {
-          "name": "List Resources",
+          "name": "List Task Resources",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/:taskId/resources", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", ":taskId", "resources"] }
+            "url": "{{baseUrl}}{{apiVersion}}/tasks/{{taskId}}/resources"
           }
         },
         {
-          "name": "Create Resource",
+          "name": "Create Task Resource",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"HTML Guide\",\n  \"url\": \"https://developer.mozilla.org/\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/:taskId/resources", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", ":taskId", "resources"] }
+            "url": "{{baseUrl}}{{apiVersion}}/tasks/{{taskId}}/resources",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"documentation\",\n  \"title\": \"ARIA Authoring Practices\",\n  \"link\": \"https://www.w3.org/WAI/ARIA/apg/\",\n  \"whyThisResource\": \"Helpful when building accessible interactive components.\",\n  \"whenToUse\": \"before-task\"\n}"
+            }
           }
         },
         {
-          "name": "Update Resource",
+          "name": "Update Task Resource",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Resource\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/resources/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", "resources", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/tasks/resources/{{resourceId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"article\",\n  \"title\": \"Accessible Navbar Patterns\",\n  \"whenToUse\": \"reference\"\n}"
+            }
           }
         },
         {
-          "name": "Delete Resource",
+          "name": "Delete Task Resource",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/tasks/resources/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "tasks", "resources", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/tasks/resources/{{resourceId}}"
           }
         }
       ]
@@ -321,35 +609,104 @@
       "name": "Projects",
       "item": [
         {
-          "name": "List Projects",
+          "name": "List Projects By Roadmap",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/projects", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "projects"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}/projects"
           }
         },
         {
           "name": "Create Project",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Portfolio Site\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/projects", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "projects"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/{{roadmapId}}/projects",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Build a Portfolio Platform\",\n  \"problemStatement\": \"Create a portfolio platform where users can showcase projects, skills, and contact details with an admin-friendly content model.\",\n  \"constraints\": [\n    \"Use a responsive layout across desktop and mobile.\",\n    \"Include a simple admin workflow for updating portfolio content.\"\n  ],\n  \"expectedOutcome\": \"A polished portfolio application with reusable UI sections and maintainable routing.\",\n  \"difficulty\": \"medium\",\n  \"extensionIdeas\": [\n    \"Add project filtering by tag.\",\n    \"Add analytics for profile visits.\"\n  ]\n}"
+            }
           }
         },
         {
           "name": "Update Project",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Project\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/projects/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", "projects", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/projects/{{projectId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"difficulty\": \"hard\",\n  \"expectedOutcome\": \"An end-to-end portfolio application with deployment-ready quality.\",\n  \"extensionIdeas\": [\n    \"Add markdown support for project writeups.\",\n    \"Add CMS-backed content sync.\"\n  ]\n}"
+            }
           }
         },
         {
           "name": "Delete Project",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/projects/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", "projects", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmap/projects/{{projectId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Project Resources",
+      "item": [
+        {
+          "name": "List Project Resources",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/projects/{{projectId}}/resources"
+          }
+        },
+        {
+          "name": "Create Project Resource",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/projects/{{projectId}}/resources",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"github\",\n  \"title\": \"Example Fullstack Starter\",\n  \"link\": \"https://github.com/vercel/nextjs-postgres-nextauth-tailwindcss-template\",\n  \"whyThisResource\": \"Provides a reference structure for a production-ready starter app.\",\n  \"whenToUse\": \"before-project\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Project Resource",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}{{apiVersion}}/projects/resources/{{projectResourceId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"documentation\",\n  \"whenToUse\": \"reference\",\n  \"whyThisResource\": \"Use this as a reference while refining architecture and deployment details.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Project Resource",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}{{apiVersion}}/projects/resources/{{projectResourceId}}"
           }
         }
       ]
@@ -358,24 +715,24 @@
       "name": "Enrollment",
       "item": [
         {
-          "name": "Enroll Roadmap",
+          "name": "Enroll In Roadmap",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/enroll", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "enroll"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmaps/{{roadmapId}}/enroll"
           }
         },
         {
           "name": "Get My Enrollments",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/me/enrollments", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "me", "enrollments"] }
+            "url": "{{baseUrl}}{{apiVersion}}/me/enrollments"
           }
         },
         {
-          "name": "Unenroll Roadmap",
+          "name": "Drop Enrollment",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/roadmaps/:roadmapId/enroll", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "roadmaps", ":roadmapId", "enroll"] }
+            "url": "{{baseUrl}}{{apiVersion}}/roadmaps/{{roadmapId}}/enroll"
           }
         }
       ]
@@ -387,132 +744,176 @@
           "name": "Get My Communities",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/me"
           }
         },
         {
-          "name": "Get Community",
+          "name": "Get Community By Id",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}"
           }
         },
         {
           "name": "Leave Community",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/leave", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "leave"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/leave"
           }
         },
         {
-          "name": "Mute Community",
+          "name": "Mute Myself In Community",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/mute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "mute"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/mute"
           }
         },
         {
-          "name": "Unmute Community",
+          "name": "Unmute Myself In Community",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/unmute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "unmute"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/unmute"
           }
         },
         {
           "name": "Get Community Members",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/members"
           }
         },
         {
           "name": "Remove Community Member",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/members/{{userId}}"
           }
         },
         {
-          "name": "Mute Member",
+          "name": "Mute Community Member",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId/mute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId", "mute"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/members/{{userId}}/mute"
           }
         },
         {
-          "name": "Unmute Member",
+          "name": "Unmute Community Member",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/members/:userId/unmute", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "members", ":userId", "unmute"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/members/{{userId}}/unmute"
           }
         },
         {
-          "name": "Get Messages",
+          "name": "List Community Messages",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages?page=1&limit=20&includeDeleted=false&pinnedOnly=false"
           }
         },
         {
-          "name": "Send Message",
+          "name": "Create Community Message",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Hello community!\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"I just finished the module task and wanted feedback on my approach.\",\n  \"attachments\": [\n    {\n      \"url\": \"https://example.com/mockup.png\",\n      \"type\": \"image\",\n      \"name\": \"mockup.png\",\n      \"size\": 204800\n    }\n  ],\n  \"mentions\": [\n    \"{{userId}}\"\n  ],\n  \"moduleId\": \"{{moduleId}}\",\n  \"taskId\": \"{{taskId}}\",\n  \"messageType\": \"task\"\n}"
+            }
           }
         },
         {
-          "name": "Update Message",
+          "name": "Edit Community Message",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Updated message\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"Updated message after fixing the accessibility issue.\",\n  \"attachments\": [\n    {\n      \"url\": \"https://example.com/fix-notes.pdf\",\n      \"type\": \"file\",\n      \"name\": \"fix-notes.pdf\",\n      \"size\": 40960\n    }\n  ]\n}"
+            }
           }
         },
         {
-          "name": "Delete Message",
+          "name": "Delete Community Message",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}"
           }
         },
         {
-          "name": "Pin Message",
+          "name": "Pin Community Message",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/pin", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "pin"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}/pin"
           }
         },
         {
-          "name": "Unpin Message",
+          "name": "Unpin Community Message",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/unpin", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "unpin"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}/unpin"
           }
         },
         {
-          "name": "React Message",
+          "name": "Add Message Reaction",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"reaction\": \"+1\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/reactions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "reactions"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}/reactions",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"emoji\": \"fire\"\n}"
+            }
           }
         },
         {
-          "name": "Remove Reaction",
+          "name": "Remove Message Reaction",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/messages/:messageId/reactions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "messages", ":messageId", "reactions"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/messages/{{messageId}}/reactions",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"emoji\": \"fire\"\n}"
+            }
           }
         },
         {
-          "name": "Mark Read",
+          "name": "Mark Community Read",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/communities/:communityId/read", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "communities", ":communityId", "read"] }
+            "url": "{{baseUrl}}{{apiVersion}}/communities/{{communityId}}/read",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messageId\": \"{{messageId}}\"\n}"
+            }
           }
         }
       ]
@@ -524,92 +925,149 @@
           "name": "List Notifications",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications"] }
+            "url": "{{baseUrl}}{{apiVersion}}/notifications?page=1&limit=20&unreadOnly=false"
           }
         },
         {
           "name": "Create Notification",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Reminder\",\n  \"message\": \"Complete your task\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications"] }
+            "url": "{{baseUrl}}{{apiVersion}}/notifications",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"message\": \"Your mentor review is available for the latest project submission.\"\n}"
+            }
           }
         },
         {
-          "name": "Mark All Read",
+          "name": "Mark All Notifications Read",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/read-all", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", "read-all"] }
+            "url": "{{baseUrl}}{{apiVersion}}/notifications/read-all"
           }
         },
         {
-          "name": "Mark Read",
+          "name": "Mark Notification Read",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/:id/read", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", ":id", "read"] }
+            "url": "{{baseUrl}}{{apiVersion}}/notifications/{{notificationId}}/read"
           }
         },
         {
           "name": "Delete Notification",
           "request": {
             "method": "DELETE",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/notifications/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "notifications", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/notifications/{{notificationId}}"
           }
         }
       ]
     },
     {
-      "name": "Submissions",
+      "name": "Project Submissions",
       "item": [
         {
-          "name": "Create Project Submission",
+          "name": "Submit Project",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"projectId\": \"<projectId>\",\n  \"submissionUrl\": \"https://github.com/user/repo\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions"] }
+            "url": "{{baseUrl}}{{apiVersion}}/project-submissions",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"projectId\": \"{{projectId}}\",\n  \"githubRepo\": \"https://github.com/example/careernav-project-submission\"\n}"
+            }
           }
         },
         {
           "name": "Get My Project Submissions",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/project-submissions/me"
           }
         },
         {
           "name": "Review Project Submission",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"feedback\": \"Great work!\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/project-submissions/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "project-submissions", ":id", "review"] }
+            "url": "{{baseUrl}}{{apiVersion}}/project-submissions/{{projectSubmissionId}}/review",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"approved\"\n}"
+            }
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "Task Submissions",
+      "item": [
         {
-          "name": "Create Task Submission",
+          "name": "Submit Task",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"taskId\": \"<taskId>\",\n  \"submissionText\": \"My solution\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions"] }
+            "url": "{{baseUrl}}{{apiVersion}}/task-submissions",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"taskId\": \"{{taskId}}\",\n  \"content\": \"I implemented the feature with semantic HTML, reusable components, and keyboard-accessible interactions.\"\n}"
+            }
           }
         },
         {
           "name": "Get My Task Submissions",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/task-submissions/me"
           }
         },
         {
           "name": "Review Task Submission",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"feedback\": \"Good\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/task-submissions/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "task-submissions", ":id", "review"] }
+            "url": "{{baseUrl}}{{apiVersion}}/task-submissions/{{taskSubmissionId}}/review",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"rejected\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "My Tasks",
+      "item": [
+        {
+          "name": "Get My Tasks",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/my-tasks"
           }
         }
       ]
@@ -618,28 +1076,99 @@
       "name": "Progress",
       "item": [
         {
-          "name": "Start Progress",
+          "name": "Create Progress Record",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"moduleId\": \"<moduleId>\",\n  \"taskId\": \"<taskId>\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/start", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "start"] }
+            "url": "{{baseUrl}}{{apiVersion}}/progress",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"roadmapId\": \"{{roadmapId}}\",\n  \"moduleId\": \"{{moduleId}}\",\n  \"taskId\": \"{{taskId}}\",\n  \"status\": \"in-progress\"\n}"
+            }
           }
         },
         {
-          "name": "Complete Progress",
-          "request": {
-            "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"moduleId\": \"<moduleId>\",\n  \"taskId\": \"<taskId>\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/complete", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "complete"] }
-          }
-        },
-        {
-          "name": "Roadmap Progress",
+          "name": "List Progress Records",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/progress/roadmaps/:roadmapId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "progress", "roadmaps", ":roadmapId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/progress?page=1&limit=20&roadmapId={{roadmapId}}&moduleId={{moduleId}}&taskId={{taskId}}&status=in-progress&scope=task&sortBy=updatedAt&sortOrder=desc"
+          }
+        },
+        {
+          "name": "Get Progress Record",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/records/{{progressId}}"
+          }
+        },
+        {
+          "name": "Start Task Progress",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/start",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"taskId\": \"{{taskId}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Complete Task Progress",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/complete",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"taskId\": \"{{taskId}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Get My Roadmap Progress",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/roadmaps/{{roadmapId}}"
+          }
+        },
+        {
+          "name": "Get Aggregated Roadmap Progress",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/{{roadmapId}}"
+          }
+        },
+        {
+          "name": "Update Progress Record",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}{{apiVersion}}/progress/{{progressId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"completed\"\n}"
+            }
           }
         }
       ]
@@ -651,74 +1180,148 @@
           "name": "Create Roadmap Purchase",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/roadmaps/:roadmapId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", "roadmaps", ":roadmapId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/purchases/roadmaps/{{roadmapId}}"
           }
         },
         {
           "name": "List My Purchases",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/purchases/me"
           }
         },
         {
-          "name": "Get Purchase",
+          "name": "Get Purchase By Id",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/purchases/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "purchases", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/purchases/{{purchaseId}}"
           }
         }
       ]
     },
     {
-      "name": "Profiles",
+      "name": "Role Profiles",
       "item": [
         {
           "name": "Get My Role Profile",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles/me"
           }
         },
         {
-          "name": "List Role Profiles (Admin)",
+          "name": "List Role Profiles",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles"] }
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles"
           }
         },
         {
-          "name": "Upsert Role Profile (Admin)",
+          "name": "Get Role Profile By User Id",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles/{{userId}}"
+          }
+        },
+        {
+          "name": "Upsert Role Profile",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"userId\": \"<userId>\",\n  \"permissions\": [\"roadmap:write\"]\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/role-profiles", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "role-profiles"] }
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"permissions\": [\n    \"roadmap:write\",\n    \"roadmap:publish\",\n    \"community:moderate\"\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Role Profile",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles/{{userId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"permissions\": [\n    \"roadmap:write\",\n    \"billing:read\"\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Role Profile",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}{{apiVersion}}/role-profiles/{{userId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mentor Profiles",
+      "item": [
+        {
+          "name": "List Mentor Profiles",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-profiles"
           }
         },
         {
           "name": "Get My Mentor Profile",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me"
           }
         },
         {
-          "name": "Update My Mentor Profile",
+          "name": "Upsert My Mentor Profile",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"expertise\": [\"frontend\"],\n  \"experienceYears\": 4,\n  \"bio\": \"Frontend mentor\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-profiles/me",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"expertise\": [\n    \"frontend\",\n    \"react\",\n    \"accessibility\"\n  ],\n  \"experienceYears\": 5,\n  \"bio\": \"Frontend mentor focused on production-ready UI engineering and developer ergonomics.\"\n}"
+            }
           }
         },
         {
-          "name": "Verify Mentor (Admin)",
+          "name": "Get Mentor Profile By User Id",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-profiles/{{userId}}"
+          }
+        },
+        {
+          "name": "Verify Mentor Profile",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"isVerified\": true\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-profiles/:userId/verify", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-profiles", ":userId", "verify"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-profiles/{{userId}}/verify",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isVerified\": true\n}"
+            }
           }
         }
       ]
@@ -727,58 +1330,133 @@
       "name": "AI",
       "item": [
         {
+          "name": "Mentor AI",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/ai/mentor",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"roadmapId\": \"{{roadmapId}}\",\n  \"moduleId\": \"{{moduleId}}\",\n  \"taskId\": \"{{taskId}}\",\n  \"userQuery\": \"I understand the basics, but I am stuck on how to break this backend task into smaller steps without getting the full answer.\",\n  \"includeResources\": true,\n  \"maxTokens\": 700\n}"
+            }
+          }
+        },
+        {
+          "name": "Progress AI",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/ai/progress",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"roadmapId\": \"{{roadmapId}}\",\n  \"completedTaskIds\": [\n    \"{{taskId}}\"\n  ],\n  \"pendingModuleIds\": [\n    \"{{moduleId}}\"\n  ],\n  \"performance\": {\n    \"selfAssessment\": \"I am consistent with theory but slower when tasks require implementation decisions.\",\n    \"blockers\": [\n      \"I overthink database schema choices.\"\n    ],\n    \"recentWins\": [\n      \"Finished the authentication module.\"\n    ],\n    \"consistencyScore\": 74,\n    \"averageStudyHoursPerWeek\": 8\n  },\n  \"maxTokens\": 800\n}"
+            }
+          }
+        },
+        {
+          "name": "Engineering AI",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}{{apiVersion}}/ai/engineering",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"instruction\": \"Review this backend feature plan and tell me what models, controllers, routes, validations, and Postman requests are missing.\",\n  \"backendContext\": \"Current stack: Node.js, Express, MongoDB with Mongoose, MVC plus service layer, centralized AppError handling, Zod validation helper.\",\n  \"architectureNotes\": [\n    \"Auth uses cookie-based JWT middleware.\",\n    \"Rate limiting is implemented with express-rate-limit.\"\n  ],\n  \"includePostmanCollection\": true,\n  \"maxTokens\": 1000\n}"
+            }
+          }
+        },
+        {
           "name": "Create Conversation",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"roadmapId\": \"<roadmapId>\",\n  \"taskId\": \"<taskId>\",\n  \"purpose\": \"guidance\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/conversations",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"roadmapId\": \"{{roadmapId}}\",\n  \"taskId\": \"{{taskId}}\",\n  \"purpose\": \"chat\",\n  \"storeMessages\": false\n}"
+            }
           }
         },
         {
           "name": "List Conversations",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/conversations"
           }
         },
         {
           "name": "Get Conversation",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/conversations/{{conversationId}}"
           }
         },
         {
           "name": "Send Message",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"content\": \"Can you help me with this task?\",\n  \"generate\": true\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id/messages", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id", "messages"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/conversations/{{conversationId}}/messages",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"What is axios and why would I use it in a Node.js backend?\",\n  \"generate\": true,\n  \"persist\": false\n}"
+            }
           }
         },
         {
           "name": "Close Conversation",
           "request": {
             "method": "POST",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/conversations/:id/close", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "conversations", ":id", "close"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/conversations/{{conversationId}}/close"
           }
         },
         {
           "name": "Get Learning Context",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/context/:taskId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "context", ":taskId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/context/{{taskId}}"
           }
         },
         {
           "name": "Upsert Learning Context",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"rules\": {\n    \"prerequisites\": [\"html\"]\n  }\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/ai/context/:taskId", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "ai", "context", ":taskId"] }
+            "url": "{{baseUrl}}{{apiVersion}}/ai/context/{{taskId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"rules\": {\n    \"prerequisites\": [\n      \"HTML\",\n      \"CSS\",\n      \"JavaScript basics\"\n    ],\n    \"avoid\": [\n      \"full solution\",\n      \"copy-paste answer\"\n    ],\n    \"focus\": [\n      \"reasoning\",\n      \"debugging process\",\n      \"tradeoff analysis\"\n    ]\n  }\n}"
+            }
           }
         }
       ]
@@ -787,58 +1465,82 @@
       "name": "Billing",
       "item": [
         {
-          "name": "List Plans",
+          "name": "List Billing Plans",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/plans"
           }
         },
         {
-          "name": "Get Plan",
+          "name": "Get Billing Plan",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/plans/{{planId}}"
           }
         },
         {
-          "name": "Create Plan (Admin)",
+          "name": "Create Billing Plan",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Enterprise\",\n  \"code\": \"enterprise\",\n  \"price\": 99,\n  \"currency\": \"USD\",\n  \"billingInterval\": \"monthly\",\n  \"aiTokenLimit\": 1000000\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/plans",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Team Pro\",\n  \"code\": \"team-pro\",\n  \"description\": \"Shared workspace plan with higher AI limits for active teams.\",\n  \"price\": 49,\n  \"currency\": \"USD\",\n  \"billingInterval\": \"monthly\",\n  \"aiTokenLimit\": 750000,\n  \"features\": [\n    \"Priority AI guidance\",\n    \"Team collaboration\",\n    \"Advanced analytics\"\n  ],\n  \"isDefault\": false,\n  \"status\": \"active\"\n}"
+            }
           }
         },
         {
-          "name": "Update Plan (Admin)",
+          "name": "Update Billing Plan",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"aiTokenLimit\": 250000\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/plans/{{planId}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 59,\n  \"billingInterval\": \"yearly\",\n  \"aiTokenLimit\": 900000,\n  \"status\": \"active\"\n}"
+            }
           }
         },
         {
-          "name": "Set Default Plan (Admin)",
+          "name": "Set Default Billing Plan",
           "request": {
             "method": "PATCH",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/plans/:id/default", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "plans", ":id", "default"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/plans/{{planId}}/default"
           }
         },
         {
           "name": "Get My Usage",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/usage/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "usage", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/usage/me"
           }
         },
         {
-          "name": "Set User Plan (Admin)",
+          "name": "Set User Plan",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"planId\": \"<planId>\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/billing/usage/:userId/plan", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "billing", "usage", ":userId", "plan"] }
+            "url": "{{baseUrl}}{{apiVersion}}/billing/usage/{{userId}}/plan",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"planId\": \"{{planId}}\",\n  \"expiresAt\": \"2027-04-15T00:00:00.000Z\"\n}"
+            }
           }
         }
       ]
@@ -847,35 +1549,77 @@
       "name": "Mentor Onboarding",
       "item": [
         {
-          "name": "Apply",
+          "name": "Submit Mentor Application",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"expertise\": [\"frontend\"],\n  \"experienceYears\": 3,\n  \"bio\": \"I love teaching\",\n  \"portfolioUrl\": \"https://example.com\",\n  \"linkedInUrl\": \"https://linkedin.com/in/example\",\n  \"availability\": \"Weekends\",\n  \"motivation\": \"Help learners\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/apply", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", "apply"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/apply",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"expertise\": [\n    \"frontend\",\n    \"nodejs\",\n    \"system-design\"\n  ],\n  \"experienceYears\": 6,\n  \"bio\": \"Engineer and mentor who enjoys helping learners ship production features.\",\n  \"portfolioUrl\": \"https://example.dev\",\n  \"linkedInUrl\": \"https://linkedin.com/in/example-mentor\",\n  \"availability\": \"Weekdays after 7 PM IST and weekends.\",\n  \"motivation\": \"I want to help learners avoid common mistakes and build strong engineering habits.\"\n}"
+            }
           }
         },
         {
-          "name": "Get My Application",
+          "name": "Get My Mentor Application",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/me", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", "me"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/me"
           }
         },
         {
-          "name": "List Applications (Admin)",
+          "name": "List Mentor Applications",
           "request": {
             "method": "GET",
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-onboarding?status=pending"
           }
         },
         {
-          "name": "Review Application (Admin)",
+          "name": "Review Mentor Application",
           "request": {
             "method": "PATCH",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
-            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\",\n  \"notes\": \"Welcome aboard\"\n}" },
-            "url": { "raw": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/:id/review", "host": ["{{baseUrl}}"], "path": ["{{apiVersion}}", "mentor-onboarding", ":id", "review"] }
+            "url": "{{baseUrl}}{{apiVersion}}/mentor-onboarding/{{mentorApplicationId}}/review",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"action\": \"approved\",\n  \"notes\": \"Strong application and relevant experience for mentoring frontend and backend learners.\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "item": [
+        {
+          "name": "Get Learner Analytics",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/analytics/learner"
+          }
+        },
+        {
+          "name": "Get Mentor Analytics",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/analytics/mentor"
+          }
+        },
+        {
+          "name": "Get Admin Analytics",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}{{apiVersion}}/analytics/admin"
           }
         }
       ]

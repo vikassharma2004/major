@@ -28,6 +28,6 @@ AuthRouter.route("/resend-otp").post(resendOtpController);
 
 /* ========================= 2FA ========================= */
 AuthRouter.route("/2fa/generate").post(authenticate, generate2FA);
-AuthRouter.route("/2fa/verify").post(verify2FA);
+AuthRouter.route("/2fa/verify").post(authenticate,verify2FA);
 
 export default AuthRouter;

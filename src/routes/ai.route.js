@@ -10,8 +10,11 @@ import {
 } from "../controllers/ai.controller.js";
 import { authenticate } from "../middleware/Auth.middleware.js";
 import { aiLimiter } from "../config/security.js";
+import enterpriseAiRouter from "../modules/ai/ai.routes.js";
 
 const AiRouter = express.Router();
+
+AiRouter.use(enterpriseAiRouter);
 
 AiRouter.post("/conversations", authenticate, createConversationController);
 AiRouter.get("/conversations", authenticate, listConversationsController);

@@ -32,15 +32,15 @@ export const listMentorApplicationsController = catchAsyncError(
 
 export const reviewMentorApplicationController = catchAsyncError(
   async (req, res) => {
-    const { status, notes } = req.body;
-    if (!status) {
+    const { action, notes } = req.body;
+    if (!action) {
       throw new AppError("status is required", 400);
     }
 
     const onboarding = await reviewMentorApplication(
       req.params.id,
       req.user.id,
-      status,
+      action,
       notes
     );
 

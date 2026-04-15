@@ -57,5 +57,7 @@ const purchaseSchema = new mongoose.Schema(
 );
 
 purchaseSchema.index({ userId: 1, roadmapId: 1 });
+purchaseSchema.index({ roadmapId: 1, status: 1, createdAt: -1 });
+purchaseSchema.index({ userId: 1, status: 1, createdAt: -1 });
 
 export const Purchase = mongoose.model("Purchase", purchaseSchema);

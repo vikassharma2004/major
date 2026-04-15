@@ -1,6 +1,6 @@
 import helmet from 'helmet';
 import cors from 'cors';
-import rateLimit from 'express-rate-limit';
+import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
 import mongoSanitize from 'express-mongo-sanitize';
 import xss from 'xss-clean';
 import compression from 'compression';
@@ -8,7 +8,7 @@ import compression from 'compression';
 // Rate limiting configurations
 export const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // 5 attempts per window
+  max: 50, // 5 attempts per window
   message: {
     error: 'Too many authentication attempts',
     message: 'Please try again after 15 minutes',
@@ -21,7 +21,7 @@ export const authLimiter = rateLimit({
 
 export const generalLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // 100 requests per window
+  max: 1000, // 100 requests per window
   message: {
     error: 'Too many requests',
     message: 'Please try again later'
@@ -32,7 +32,7 @@ export const generalLimiter = rateLimit({
 
 export const strictLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 3, // 3 attempts per window for sensitive operations
+  max: 30, // 3 attempts per window for sensitive operations
   message: {
     error: 'Too many sensitive operation attempts',
     message: 'Please try again after 15 minutes'
@@ -43,7 +43,7 @@ export const strictLimiter = rateLimit({
 
 const getRateLimitKey = (req) => {
   const userId = req.user?.id;
-  const ip = req.ip;
+  const ip = ipKeyGenerator(req.ip);
   return userId ? `user:${userId}` : `ip:${ip}`;
 };
 

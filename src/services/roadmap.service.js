@@ -16,6 +16,7 @@ export const createRoadmap = async (data, mentorId) => {
     coverImage,
     visualOverview,
     level,
+    domain,
     isPaid = false,
     price = 0
   } = data;
@@ -31,8 +32,8 @@ export const createRoadmap = async (data, mentorId) => {
     coverImage,
     visualOverview,
     level,
+    domain,
     isPaid,
-    coverImage,
     price: finalPrice,
     createdBy: mentorId
   });

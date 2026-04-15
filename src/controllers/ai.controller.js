@@ -11,16 +11,22 @@ import { catchAsyncError } from "../middleware/CatchAsyncError.js";
 import { AppError } from "../middleware/ErrorHanlder.js";
 
 export const createConversationController = catchAsyncError(async (req, res) => {
-  const { roadmapId, taskId, purpose } = req.body;
+  const {
+    roadmapId,
+    taskId,
+    purpose = "chat",
+    storeMessages = true
+  } = req.body;
 
-  if (!roadmapId || !purpose) {
-    throw new AppError("roadmapId and purpose are required", 400);
+  if (taskId && !roadmapId) {
+    throw new AppError("roadmapId is required when taskId is provided", 400);
   }
 
   const conversation = await createConversation(req.user.id, {
     roadmapId,
     taskId,
-    purpose
+    purpose,
+    storeMessages
   });
 
   res.status(201).json({ success: true, conversation });
@@ -59,7 +65,7 @@ export const getLearningContextController = catchAsyncError(async (req, res) => 
 });
 
 export const sendMessageController = catchAsyncError(async (req, res) => {
-  const { content, generate } = req.body;
+  const { content, generate, persist } = req.body;
   if (!content) {
     throw new AppError("content is required", 400);
   }
@@ -68,7 +74,8 @@ export const sendMessageController = catchAsyncError(async (req, res) => {
     req.user.id,
     req.params.id,
     content,
-    generate !== false
+    generate !== false,
+    { persist }
   );
 
   res.status(200).json({ success: true, ...result });

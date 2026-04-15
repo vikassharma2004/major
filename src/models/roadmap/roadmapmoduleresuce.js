@@ -1,0 +1,6 @@
+export {
+  ROADMAP_MODULE_RESOURCE_DIFFICULTIES,
+  ROADMAP_MODULE_RESOURCE_LEARNING_STAGES,
+  ROADMAP_MODULE_RESOURCE_TYPES,
+  RoadmapModuleResource
+} from "./RoadmapModuleResource.model.js";

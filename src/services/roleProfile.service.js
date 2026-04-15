@@ -1,12 +1,13 @@
 import { RoleProfile } from "../models/system/RoleProfile.model.js";
 import { AppError } from "../middleware/ErrorHanlder.js";
+import { User } from "../models/Auth/User.model.js";
 
 export const getRoleProfileByUserId = async (userId) => {
   return RoleProfile.findOne({ userId });
 };
 
 export const listRoleProfiles = async () => {
-  const profiles = await RoleProfile.find().sort({ createdAt: -1 });
+  const profiles = await User.find().sort({ createdAt: -1 });
   return profiles;
 };
 

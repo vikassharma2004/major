@@ -12,7 +12,7 @@ const aiConversationSchema = new mongoose.Schema(
     roadmapId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Roadmap",
-      required: true,
+      default: null,
       index: true
     },
 
@@ -24,9 +24,14 @@ const aiConversationSchema = new mongoose.Schema(
 
     purpose: {
       type: String,
-      enum: ["guidance", "review"],
-      required: true,
+      enum: ["guidance", "review", "chat", "analysis"],
+      default: "chat",
       index: true
+    },
+
+    storeMessages: {
+      type: Boolean,
+      default: true
     },
 
     status: {
@@ -38,6 +43,8 @@ const aiConversationSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+aiConversationSchema.index({ userId: 1, status: 1, updatedAt: -1 });
 
 export const AIConversation = mongoose.model(
   "AIConversation",

@@ -20,4 +20,6 @@ const enrollmentSchema = new mongoose.Schema(
 );
 
 enrollmentSchema.index({ userId: 1, roadmapId: 1 }, { unique: true });
+enrollmentSchema.index({ userId: 1, createdAt: -1 });
+enrollmentSchema.index({ roadmapId: 1, status: 1, userId: 1 });
 export const Enrollment = mongoose.model("Enrollment", enrollmentSchema);

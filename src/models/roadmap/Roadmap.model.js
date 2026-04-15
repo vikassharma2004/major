@@ -80,4 +80,7 @@ domain: {
   { timestamps: true }
 );
 
+roadmapSchema.index({ createdBy: 1, isPublished: 1 });
+roadmapSchema.index({ domain: 1, isPublished: 1 });
+
 export const Roadmap = mongoose.model("Roadmap", roadmapSchema);

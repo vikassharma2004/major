@@ -51,6 +51,8 @@ communityMemberSchema.index(
   { communityId: 1, userId: 1 },
   { unique: true }
 );
+communityMemberSchema.index({ userId: 1, isActive: 1, joinedAt: -1 });
+communityMemberSchema.index({ communityId: 1, isActive: 1, role: 1 });
 
 export const CommunityMember = mongoose.model(
   "CommunityMember",

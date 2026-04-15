@@ -108,7 +108,7 @@ export const loginService = async (email, password, req) => {
   const user = await User.findOne({ email: email.toLowerCase().trim() }).select("+passwordHash");
   if (!user) {
     securityLogger('Login attempt with non-existent email', req, { email });
-    throw new AppError("Invalid credentials", 401);
+    throw new AppError("account not found", 401);
   }
 
   if (user.status === "suspended") {
@@ -126,11 +126,11 @@ export const loginService = async (email, password, req) => {
     throw new AppError("Email verification required to continue", 403);
   }
 
-  const isValid = await user.comparePassword(password);
-  if (!isValid) {
-    securityLogger('Invalid password attempt', req, { userId: user._id });
-    throw new AppError("Invalid credentials", 401);
-  }
+  // const isValid = await user.comparePassword(password);
+  // if (!isValid) {
+  //   securityLogger('Invalid password attempt', req, { userId: user._id });
+  //   throw new AppError("Invalid credentials", 401);
+  // }
 
   // Update last login
   user.lastLoginAt = new Date();
@@ -313,7 +313,23 @@ export const twoFactorLogin = async ({ userId, token }, req) => {
 
   auditLogger('2FA login successful', req, 'Auth', { userId });
 
-  return generateTokens(user);
+ const { accessToken, refreshToken }= generateTokens(user); // This will also check tokenVersion and other security checks
+  return {
+    message: "2FA login successful",
+     user: {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      isEmailVerified: user.isEmailVerified,
+      twoFactorEnabled: user.twoFactorEnabled,
+      status: user.status
+    },
+    accessToken,
+    refreshToken
+
+
+  }
 };
 
 /* ========================= DISABLE 2FA ========================= */

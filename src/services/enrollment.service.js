@@ -138,7 +138,6 @@ export const getMyEnrollments = async (userId) => {
   }));
 };
 
-
 /* ========================= UPDATE ENROLLMENT STATUS ========================= */
 export const updateEnrollmentStatus = async (
   enrollmentId,

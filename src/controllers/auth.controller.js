@@ -125,13 +125,14 @@ export const twoFactorLogin = [
             throw new AppError("User ID is required", 400);
         }
 
-        const result = await twoFactorLoginService({ userId, token }, req);
+        const { user,accessToken,refreshToken} = await twoFactorLoginService({ userId, token }, req);
 
-        setAuthCookies(res, result.accessToken, result.refreshToken);
+        setAuthCookies(res, accessToken, refreshToken);
 
         res.status(200).json({
+            message: "2FA login successful",
             success: true,
-            message: "2FA login successful"
+            user
         });
     })
 ];

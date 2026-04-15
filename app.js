@@ -7,10 +7,10 @@ import { configureSecurityMiddleware, authLimiter, strictLimiter, generalLimiter
 import cookieParser from "cookie-parser";
 import AuthRouter from "./src/routes/auth.route.js";
 import UserRouter from "./src/routes/user.route.js";
-import { checkGeminiConnection } from "./src/config/Aiconfig.js";
 import RoadmapRouter from "./src/routes/roadmap.route.js";
 import RoadmapModuleRouter from "./src/routes/roadmapmodule.router.js";
 import RoadmapTaskRouter from "./src/routes/roadmaptaskroute.js";
+import RoadmapModuleResourceRouter from "./src/routes/roadmapModuleResource.route.js";
 import ResourceRouter from "./src/routes/resource.route.js";
 import ProjectRouter from "./src/routes/project.route.js";
 import EnrollmentRouter from "./src/routes/enrolment.route.js";
@@ -22,9 +22,12 @@ import ProgressRouter from "./src/routes/progress.route.js";
 import PurchaseRouter from "./src/routes/purchase.route.js";
 import RoleProfileRouter from "./src/routes/roleProfile.route.js";
 import MentorProfileRouter from "./src/routes/mentorProfile.route.js";
+import UserTaskRouter from "./src/routes/userTask.route.js";
 import AiRouter from "./src/routes/ai.route.js";
 import BillingRouter from "./src/routes/billing.route.js";
 import MentorOnboardingRouter from "./src/routes/mentorOnboarding.route.js";
+import AnalyticsRouter from "./src/routes/analytics.routes.js";
+import ProjectResourceRouter from "./src/routes/projectResource.route.js";
 
 // Trust proxy for accurate IP addresses
 app.set('trust proxy', 1);
@@ -81,15 +84,18 @@ app.use(`${process.env.VERSION}/auth/2fa`, strictLimiter);
 app.use(`${process.env.VERSION}/auth`, AuthRouter);
 app.use(`${process.env.VERSION}/user`, UserRouter);
 app.use(`${process.env.VERSION}/roadmap`, RoadmapRouter);
+app.use(`${process.env.VERSION}/roadmaps`, RoadmapRouter);
 app.use(`${process.env.VERSION}/roadmap`, RoadmapModuleRouter);
 app.use(`${process.env.VERSION}/roadmap`, ProjectRouter);
 app.use(`${process.env.VERSION}/modules`, RoadmapTaskRouter);
+app.use(`${process.env.VERSION}/modules`, RoadmapModuleResourceRouter);
 app.use(`${process.env.VERSION}/tasks`, ResourceRouter);
 app.use(`${process.env.VERSION}`, EnrollmentRouter);
 app.use(`${process.env.VERSION}/communities`, CommunityRouter);
 app.use(`${process.env.VERSION}/notifications`, NotificationRouter);
 app.use(`${process.env.VERSION}/project-submissions`, ProjectSubmissionRouter);
 app.use(`${process.env.VERSION}/task-submissions`, TaskSubmissionRouter);
+app.use(`${process.env.VERSION}/my-tasks`, UserTaskRouter);
 app.use(`${process.env.VERSION}/progress`, ProgressRouter);
 app.use(`${process.env.VERSION}/purchases`, PurchaseRouter);
 app.use(`${process.env.VERSION}/role-profiles`, RoleProfileRouter);
@@ -97,6 +103,8 @@ app.use(`${process.env.VERSION}/mentor-profiles`, MentorProfileRouter);
 app.use(`${process.env.VERSION}/ai`, AiRouter);
 app.use(`${process.env.VERSION}/billing`, BillingRouter);
 app.use(`${process.env.VERSION}/mentor-onboarding`, MentorOnboardingRouter);
+app.use(`${process.env.VERSION}/analytics`, AnalyticsRouter);
+app.use(`${process.env.VERSION}/projects`, ProjectResourceRouter);
 
 // 404 Handler (AFTER ROUTES)
 app.use((req, res) => {
